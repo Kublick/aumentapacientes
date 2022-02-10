@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Counter from "./Counter";
 
-export const Hero = () => {
+export const Hero = ({ fechaEvento }) => {
   return (
     <div className="grid grid-cols-2 gap-5 p-6 justify-items-end">
       <div className="">
@@ -27,9 +27,7 @@ export const Hero = () => {
           <p>Por primera en 2022 nuestro entrenamiento online AUMENTA </p>
           <p>
             PACIENTES esta abierto al público del{" "}
-            <span className="p-2 font-bold bg-secondary">
-              09 al 15 de Marzo
-            </span>
+            <span className="p-2 font-bold bg-secondary">{fechaEvento}</span>
           </p>
         </div>
         <div className="">

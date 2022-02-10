@@ -17,19 +17,19 @@ const Counter = ({ date }) => {
     return (
       <div className="font-medium text-primary">
         <div className="flex gap-8">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-24">
             <p className="text-xl lg:text-7xl">{zeroPad(days)}</p>{" "}
             <p className="text-xs font-thin">{timeDay}</p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-24">
             <p className="text-xl lg:text-7xl">{zeroPad(hours)}</p>
             <p className="text-xs font-thin">{timeHour}</p>
           </div>
-          <div className="flex flex-col items-center ">
+          <div className="flex flex-col items-center w-24 ">
             <p className="text-xl lg:text-7xl">{zeroPad(minutes)}</p>
             <p className="text-xs font-thin">{timeMinutes}</p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-24">
             <p className="text-xl lg:text-7xl">{zeroPad(seconds)}</p>
             <p className="text-xs font-thin">{timeSeconds}</p>
           </div>
