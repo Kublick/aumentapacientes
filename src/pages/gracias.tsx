@@ -3,8 +3,10 @@ import React from "react";
 import { Footer } from "../components/Footer";
 
 const Gracias = () => {
+  const whatsAppLink = "";
+
   const handleAddToWhatsapp = () => {
-    console.log("agregar a whatsapp");
+    console.log("agregar a whatsapp", whatsAppLink);
   };
 
   return (
@@ -55,7 +57,7 @@ const Gracias = () => {
           <h1 className="text-4xl font-bold">¡Nos vemos en el taller!</h1>
           <button
             type="submit"
-            className="px-24 font-bold uppercase h-14 bg-secondary text-primary"
+            className="px-24 font-bold text-white uppercase h-14 bg-whatsapp"
             onClick={handleAddToWhatsapp}
           >
             Unirme al grupo
