@@ -61,9 +61,9 @@ export const Oferta = () => {
               <StaticImage
                 src="../images/oferta_mentoria_desktop.png"
                 alt="logo mentoria grupal"
-                className="w-3/4"
+                className="min-w-100"
               />
-              <p className="self-center text-lg font-semibold leading-5 w-100">
+              <p className="self-center text-lg font-semibold leading-5">
                 Mentoria grupal <br /> <span>el último día</span> del evento
               </p>
             </div>
@@ -103,32 +103,6 @@ export const Oferta = () => {
         <h1 className="text-2xl font-bold text-primary">
           en este entrenamiento?
         </h1>
-        <div className="grid grid-cols-4 mt-14">
-          <div>
-            <p className="text-base text-lightgray text-light">
-              Como eliminar las excusas y creencias que nos auto sabotean para
-              conseguir pacientes.
-            </p>
-          </div>
-          <div>
-            <p className="text-base text-lightgray text-light">
-              Cuales son las 3 áreas en las que nos conviene poner atención para
-              lograr tener la cantidad de pacientes que deseamos.
-            </p>
-          </div>
-          <div>
-            <p className="text-base text-lightgray text-light">
-              Cuales son los 3 secretos de los profesionales que tienen muchos
-              pacientes.
-            </p>
-          </div>
-          <div>
-            <p className="text-base text-lightgray text-light">
-              Cuales son los 7 errores mas comunes que provocan que no crezca
-              nuestra lista de pacientes.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

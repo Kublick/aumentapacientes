@@ -1,10 +1,10 @@
 import { navigate } from "gatsby";
 import React, { useState } from "react";
 
-type Form = {
+interface Form {
   fullname: string;
   email: string;
-};
+}
 
 export const Formulario = (): JSX.Element => {
   const [form, setForm] = useState({} as Form);

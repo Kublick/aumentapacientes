@@ -3,6 +3,7 @@ import { Footer } from "../components/Footer";
 import { Formulario } from "../components/Formulario";
 import { Hero } from "../components/Hero";
 import { Oferta } from "../components/Oferta";
+import { Tecnicas } from "../components/Tecnicas";
 
 const IndexPage = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = () => {
       </header>
       <Formulario />
       <Oferta />
+      <Tecnicas />
       <Formulario />
       <footer className="mt-24">
         <Footer />
