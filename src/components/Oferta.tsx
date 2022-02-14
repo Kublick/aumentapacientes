@@ -98,12 +98,6 @@ export const Oferta = () => {
           </div>
         </div>
       </div>
-      <div className="mt-24">
-        <h1 className="text-2xl font-bold text-primary">¿Que descubrirás</h1>
-        <h1 className="text-2xl font-bold text-primary">
-          en este entrenamiento?
-        </h1>
-      </div>
     </div>
   );
 };

@@ -16,22 +16,22 @@ const Counter = ({ date }) => {
 
     return (
       <div className="font-medium text-primary">
-        <div className="flex gap-8">
-          <div className="flex flex-col items-center w-24">
-            <p className="text-xl lg:text-7xl">{zeroPad(days)}</p>{" "}
-            <p className="text-xs font-thin">{timeDay}</p>
+        <div className="flex gap-6 lg:gap-8">
+          <div className="flex flex-col items-center lg:w-24">
+            <p className="text-5xl lg:text-7xl">{zeroPad(days)}</p>{" "}
+            <p className="text-xs font-light">{timeDay}</p>
           </div>
-          <div className="flex flex-col items-center w-24">
-            <p className="text-xl lg:text-7xl">{zeroPad(hours)}</p>
-            <p className="text-xs font-thin">{timeHour}</p>
+          <div className="flex flex-col items-center lg:w-24">
+            <p className="text-5xl lg:text-7xl">{zeroPad(hours)}</p>
+            <p className="text-xs font-light">{timeHour}</p>
           </div>
-          <div className="flex flex-col items-center w-24 ">
-            <p className="text-xl lg:text-7xl">{zeroPad(minutes)}</p>
-            <p className="text-xs font-thin">{timeMinutes}</p>
+          <div className="flex flex-col items-center lg:w-24 ">
+            <p className="text-5xl lg:text-7xl">{zeroPad(minutes)}</p>
+            <p className="text-xs font-light">{timeMinutes}</p>
           </div>
-          <div className="flex flex-col items-center w-24">
-            <p className="text-xl lg:text-7xl">{zeroPad(seconds)}</p>
-            <p className="text-xs font-thin">{timeSeconds}</p>
+          <div className="flex flex-col items-center lg:w-24">
+            <p className="text-5xl lg:text-7xl">{zeroPad(seconds)}</p>
+            <p className="text-xs font-light">{timeSeconds}</p>
           </div>
         </div>
       </div>
