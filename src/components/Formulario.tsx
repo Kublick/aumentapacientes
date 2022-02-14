@@ -48,8 +48,8 @@ export const Formulario = (): JSX.Element => {
 
   return (
     <>
-      <div className="px-24 bg-primary">
-        <div className="flex justify-between py-8 text-white ">
+      <div className="px-8 lg:px-24 bg-primary lg:mt-0 mt-7">
+        <div className="flex flex-col py-8 text-white lg:flex-rowlg:justify-between ">
           <div>
             <h1 className="text-3xl font-bold">¡Cupo limitado!</h1>
             <p className="text-base font-thin">
@@ -57,7 +57,10 @@ export const Formulario = (): JSX.Element => {
               <span className="font-bold">sin costo</span>
             </p>
           </div>
-          <form className="flex gap-4 " onSubmit={handleSubmit}>
+          <form
+            className="flex flex-col gap-4 mt-8 lg:flex-row lg:mt-0 "
+            onSubmit={handleSubmit}
+          >
             <input type="hidden" name="u" value="33" />
             <input type="hidden" name="f" value="33" />
             <input type="hidden" name="s" />
