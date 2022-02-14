@@ -4,15 +4,15 @@ import React from "react";
 export const Tecnicas = () => {
   return (
     <>
-      <div className="container mx-20 mt-24">
+      <div className="px-8 mt-24 md:px-20">
         <h1 className="text-2xl font-bold text-primary">¿Que descubrirás</h1>
         <h1 className="text-2xl font-bold text-primary">
           en este entrenamiento?
         </h1>
       </div>
       {/* <div className="container mx-auto mb-40 background-image"> */}
-      <div className="container mx-auto mb-40">
-        <div className="relative grid grid-cols-4 gap-4 px-6 mx-20 mt-14 top-14">
+      <div className="mx-auto mb-40">
+        <div className="relative flex flex-col gap-4 px-6 mx-20 md:grid md:grid-cols-4 mt-14 top-14">
           <div className="">
             <StaticImage
               src="../images/oferta_laptop.png"

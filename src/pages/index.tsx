@@ -12,10 +12,10 @@ const IndexPage = () => {
         <Hero fechaEvento={"09 al 15 de Marzo"} eventTime={"13 March 2022"} />
       </header>
       <Formulario />
-      {/* <Oferta />
+      <Oferta />
       <Tecnicas />
       <Formulario />
-      <footer className="mt-24">
+      {/* <footer className="mt-24">
         <Footer />
       </footer> */}
     </>

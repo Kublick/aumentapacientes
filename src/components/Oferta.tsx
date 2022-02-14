@@ -4,12 +4,12 @@ import { libroTrabajo, whatsapp } from "./utils/svg";
 
 export const Oferta = () => {
   return (
-    <div className="mx-24 mt-16 mb-20">
-      <div className="grid items-center grid-cols-2">
+    <div className="px-8 mt-16 mb-20 lg:px-24">
+      <div className="flex flex-col-reverse lg:items-center lg:grid lg:grid-cols-2">
         <div className=" text-primary">
           <h1 className="text-2xl font-bold">¿Para quien</h1>
           <h1 className="text-2xl font-bold">es este taller?</h1>
-          <div className="grid grid-cols-2 mt-12">
+          <div className="lg:grid lg:grid-cols-2 mt-9 lg:mt-12">
             <ul className="text-base font-light text-lightgray">
               <li>-Psicólogo</li>
               <li>-Nutriólogo</li>
@@ -22,21 +22,22 @@ export const Oferta = () => {
             </ul>
           </div>
         </div>
-        <div>
+        <div className="mb-9 lg:mb-0">
           <StaticImage src="../images/mock_oferta_h1.png" alt="Mock Oferta" />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4 mt-24">
+      <div className="gap-4 mt-16 lg:grid lg:grid-cols-2 lg:mt-24">
         <div>
           <StaticImage
             src="../images/oferta_laptop_web.png"
             alt="Oferta Laptop"
+            className="hidden md:block"
           />
         </div>
         <div className="text-primary">
           <h1 className="text-2xl font-bold">¿Qué incluye</h1>
           <h1 className="text-2xl font-bold">tu entrenamiento?</h1>
-          <div className="grid grid-cols-2 ">
+          <div className="my-12 md:grid md:grid-cols-2 md:mt-0 ">
             <div className="flex gap-4">
               <StaticImage
                 src="../images/oferta_libro_trabajo_desktop.png"
@@ -88,13 +89,13 @@ export const Oferta = () => {
             </div>
           </div>
           <div className="flex flex-col items-center mt-9">
-            <button className="px-20 py-4 text-base font-bold uppercase border-2 bg-secondary text-primary border-primary">
+            <button className="px-12 py-4 text-base font-bold uppercase border-2 md:px-20 bg-secondary text-primary border-primary">
               ¡Quiero registrarme!
             </button>
-            <h2 className="text-4xl font-bold line-through mt-9 text-primary">
+            <h2 className="text-3xl font-bold line-through lg:text-4xl mt-9 text-primary">
               Total: $97 dólares
             </h2>
-            <h1 className="font-bold text-93">GRATIS</h1>
+            <h1 className="font-bold text-7xl md:text-93">GRATIS</h1>
           </div>
         </div>
       </div>
