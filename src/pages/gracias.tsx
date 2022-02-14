@@ -15,19 +15,23 @@ const Gracias = () => {
 
   return (
     <>
-      <div className="mt-5">
-        <StaticImage
-          src="../images/aumenta_pacientes_logo.png"
-          alt="Aumenta Pacientes Logo"
-          className="ml-20"
-        />
-        <div className="grid items-center grid-cols-2 gap-10 mx-20 mt-10 text-primary">
+      <div className="pt-10 lg:mt-5">
+        <div className="flex justify-center lg:block">
+          <StaticImage
+            src="../images/aumenta_pacientes_logo.png"
+            alt="Aumenta Pacientes Logo"
+            className="lg:ml-20"
+          />
+        </div>
+        <div className="mx-10 mt-10 lg:grid lg:items-center lg:grid-cols-2 lg:gap-10 lg:mx-20 text-primary">
           <div>
-            <div className="text-44">
-              <h1 className="font-light leading-7 ">¡Felicidades</h1>
+            <div className="text-4xl text-center lg:text-44">
+              <h1 className="mb-2 font-light leading-7 lg:mb-4">
+                ¡Felicidades
+              </h1>
               <span className="font-bold ">Gracias por registrarte!</span>
             </div>
-            <div className="text-base font-light md:p-2">
+            <div className="mb-4 text-base font-light md:p-2">
               <p className="mt-8 mb-9 ">
                 Para finalmente completar tu registro faltan dos pasos muy
                 pequeños e IMPORTANTES
@@ -56,12 +60,13 @@ const Gracias = () => {
               duration={120}
               size={300}
               colors="#004777"
+              strokeWidth={24}
             >
               {() => {
                 return (
                   <div>
                     <p className="w-64 text-lg text-center">
-                      No pierdas esta oportunidad
+                      No te pierdas esta oportunidad
                     </p>
                   </div>
                 );
@@ -69,11 +74,11 @@ const Gracias = () => {
             </CountdownCircleTimer>
           </div>
         </div>
-        <div className="flex items-center justify-center py-8 text-white gap-28 bg-primary mt-9">
+        <div className="flex flex-col px-10 py-8 text-white lg:flex-row lg:items-center lg:justify-center lg:gap-28 bg-primary mt-9 lg:px-0">
           <h1 className="text-4xl font-bold">¡Nos vemos en el taller!</h1>
           <button
             type="submit"
-            className="px-24 font-bold text-white uppercase h-14 bg-whatsapp"
+            className="mt-8 font-bold text-white uppercase lg:px-24 h-14 bg-whatsapp lg:mt-0"
             onClick={handleAddToWhatsapp}
           >
             Unirme al grupo
