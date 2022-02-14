@@ -4,15 +4,15 @@ import { socialesBlancos } from "./utils/svg";
 
 export const Footer = () => {
   return (
-    <div className="px-20 pt-11 bg-primary">
-      <div className="flex items-center justify-between ">
+    <div className="pt-16 px-9 md:px-20 md:pt-11 bg-primary">
+      <div className="md:flex md:justify-between md:flex-row md:items-center ">
         <StaticImage
           src="../images/aumenta_blanco_desktop.png"
           alt="Aumenta Pacientes Logo"
         />
-        {socialesBlancos}
+        <div className="mt-9">{socialesBlancos}</div>
       </div>
-      <div className="flex gap-16 text-xs font-semibold leading-5 text-white mt-14">
+      <div className="flex flex-col gap-16 text-xs font-semibold leading-5 text-white md:flex-row mt-14">
         <div>
           <p>https://incrementatuconsulta.com</p>
           <p>Psicologa Berenice Bastidas</p>
@@ -32,7 +32,7 @@ export const Footer = () => {
         aprendido de nuestras experiencias y la lo desee, utilizando el enlace
         para des suscribirse que aparecerá en los correos electrónicos.
       </p>
-      <div className="flex justify-between mt-16">
+      <div className="flex flex-col gap-6 mt-16 md:justify-between md:gap-0">
         <p className="mt-5 text-sm font-extrabold leading-4 text-white">
           Legal Terms - Acerca de las politicas de privacidad y uso de cookies
         </p>

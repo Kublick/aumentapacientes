@@ -15,9 +15,9 @@ const IndexPage = () => {
       <Oferta />
       <Tecnicas />
       <Formulario />
-      {/* <footer className="mt-24">
+      <footer className="mt-24">
         <Footer />
-      </footer> */}
+      </footer>
     </>
   );
 };
