@@ -15,7 +15,7 @@ export const Oferta = () => {
               <li>-Nutriólogo</li>
               <li>-Cosmetologia</li>
             </ul>
-            <ul className="text-base font-light">
+            <ul className="text-base font-light text-lightgray">
               <li>-Terapeuta</li>
               <li>-Coach</li>
               <li>-Profesional de la salud</li>

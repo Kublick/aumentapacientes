@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import { socialesBlancos } from "./utils/svg";
+import { logoFacebook, logoInstagram, logoYouTube } from "./utils/svg";
 
 export const Footer = () => {
   return (
@@ -10,11 +10,39 @@ export const Footer = () => {
           src="../images/aumenta_blanco_desktop.png"
           alt="Aumenta Pacientes Logo"
         />
-        <div className="mt-9">{socialesBlancos}</div>
+        <div className="flex gap-5 mt-9">
+          <button
+            onClick={() =>
+              window.open("https://www.instagram.com/psicologaberenice/")
+            }
+          >
+            {logoInstagram}
+          </button>
+          <button
+            onClick={() =>
+              window.open(
+                "http://www.facebook.com/Psic%C3%B3loga-Berenice-Bastidas-Incrementa-tu-consulta-365202393876165/"
+              )
+            }
+          >
+            {logoFacebook}
+          </button>
+          <button
+            onClick={() =>
+              window.open(
+                "https://www.youtube.com/channel/UCoiQ74yUzLm6ZRUcB_rhPIQ"
+              )
+            }
+          >
+            {logoYouTube}
+          </button>
+        </div>
       </div>
       <div className="flex flex-col gap-16 text-xs font-semibold leading-5 text-white md:flex-row mt-14">
         <div>
-          <p>https://incrementatuconsulta.com</p>
+          <a href="https://aumentapacientes.com">
+            https://aumentapacientes.com
+          </a>
           <p>Psicologa Berenice Bastidas</p>
         </div>
         <div>

@@ -37,7 +37,7 @@ export const Hero = ({ fechaEvento, eventTime }: HeroProps): JSX.Element => {
             <span className="p-2 font-bold bg-secondary">{fechaEvento}</span>
           </p>
         </div>
-        <div>
+        <div className="flex justify-center lg:block">
           <Counter date={new Date(eventTime)} />
         </div>
       </div>
