@@ -32,7 +32,7 @@ export const Footer = () => {
         aprendido de nuestras experiencias y la lo desee, utilizando el enlace
         para des suscribirse que aparecerá en los correos electrónicos.
       </p>
-      <div className="flex flex-col gap-6 mt-16 md:justify-between md:gap-0">
+      <div className="flex flex-col gap-6 mt-16 lg:flex-row lg:justify-between md:gap-0">
         <p className="mt-5 text-sm font-extrabold leading-4 text-white">
           Legal Terms - Acerca de las politicas de privacidad y uso de cookies
         </p>
