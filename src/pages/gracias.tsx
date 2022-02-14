@@ -1,6 +1,10 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Footer } from "../components/Footer";
+import {
+  CountdownCircleTimer,
+  useCountdown,
+} from "react-countdown-circle-timer";
 
 const Gracias = () => {
   const whatsAppLink = "";
@@ -46,11 +50,23 @@ const Gracias = () => {
               </p>
             </div>
           </div>
-          <div>
-            <StaticImage
-              src="../images/gracias_portrait.png"
-              alt="Aumenta Pacientes Logo"
-            />
+          <div className="flex justify-center">
+            <CountdownCircleTimer
+              isPlaying
+              duration={120}
+              size={300}
+              colors="#004777"
+            >
+              {() => {
+                return (
+                  <div>
+                    <p className="w-64 text-lg text-center">
+                      No pierdas esta oportunidad
+                    </p>
+                  </div>
+                );
+              }}
+            </CountdownCircleTimer>
           </div>
         </div>
         <div className="flex items-center justify-center py-8 text-white gap-28 bg-primary mt-9">

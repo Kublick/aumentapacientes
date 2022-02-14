@@ -48,7 +48,7 @@ export const Oferta = () => {
             </div>
             <div className="flex gap-4">
               <StaticImage
-                src="../images/oferta_whatsapp.svg"
+                src="../images/oferta_whatsapp.png"
                 alt="logo whatasapp oferta"
                 className="w-auto"
               />
