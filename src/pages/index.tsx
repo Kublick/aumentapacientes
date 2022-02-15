@@ -1,18 +1,51 @@
 import * as React from "react";
+import { useRef } from "react";
 import { Footer } from "../components/Footer";
 import { Formulario } from "../components/Formulario";
 import { Hero } from "../components/Hero";
 import { Oferta } from "../components/Oferta";
+import SEO from "../components/seo";
 import { Tecnicas } from "../components/Tecnicas";
 
+declare const window: Window &
+  typeof globalThis & {
+    fbq: any;
+  };
+
 const IndexPage = () => {
+  const registroRef = useRef<null | HTMLDivElement>(null);
+
+  if (typeof window !== "undefined") {
+    if (window.fbq != null) {
+      window.fbq("track", "ViewContent");
+    }
+  }
+
+  function handleBackClick() {
+    registroRef.current.scrollTo({ behavior: "smooth" });
+  }
+
   return (
     <>
+      <SEO
+        title="Aumenta tu numero de pacientes"
+        keywords={[
+          `psicologo`,
+          `curso`,
+          `pacientes`,
+          `formacion`,
+          `nutriologos`,
+          `medicos`,
+          `fisioterapeutas`,
+        ]}
+      />
       <header>
         <Hero fechaEvento={"09 al 15 de Marzo"} eventTime={"13 March 2022"} />
       </header>
-      <Formulario />
-      <Oferta />
+      <div ref={registroRef}>
+        <Formulario />
+      </div>
+      <Oferta handleClick={handleBackClick} />
       <Tecnicas />
       <Formulario />
       <footer className="mt-24">

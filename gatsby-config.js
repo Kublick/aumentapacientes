@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.aumentapacinetes.com",
     title: "Aumenta tus pacientes",
-    authoer: "@piscberenicebastidas",
+    author: "@piscberenicebastidas",
     description:
       "Curso para profesionales de la salud que quieren aumentar sus pacientes",
   },

@@ -67,6 +67,7 @@ export const Tecnicas = () => {
         infiniteLoop={true}
         showStatus={false}
         showIndicators={false}
+        showThumbs={false}
       >
         <div>
           <StaticImage

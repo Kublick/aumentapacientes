@@ -1,13 +1,21 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Footer } from "../components/Footer";
-import {
-  CountdownCircleTimer,
-  useCountdown,
-} from "react-countdown-circle-timer";
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
+
+declare const window: Window &
+  typeof globalThis & {
+    fbq: any;
+  };
 
 const Gracias = () => {
   const whatsAppLink = "";
+
+  if (typeof window !== "undefined") {
+    if (window.fbq != null) {
+      window.fbq("track", "CompleteRegistration");
+    }
+  }
 
   const handleAddToWhatsapp = () => {
     console.log("agregar a whatsapp", whatsAppLink);

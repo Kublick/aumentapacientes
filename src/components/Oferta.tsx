@@ -2,7 +2,11 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { libroTrabajo, whatsapp } from "./utils/svg";
 
-export const Oferta = () => {
+type Props = {
+  handleClick: () => void;
+};
+
+export const Oferta = ({ handleClick }: Props) => {
   return (
     <div className="px-8 mt-16 mb-20 lg:px-24">
       <div className="flex flex-col-reverse lg:items-center lg:grid lg:grid-cols-2">
@@ -89,7 +93,10 @@ export const Oferta = () => {
             </div>
           </div>
           <div className="flex flex-col items-center mt-9">
-            <button className="px-12 py-4 text-base font-bold uppercase border-2 md:px-20 bg-secondary text-primary border-primary">
+            <button
+              className="px-12 py-4 text-base font-bold uppercase border-2 md:px-20 bg-secondary text-primary border-primary"
+              onClick={handleClick}
+            >
               ¡Quiero registrarme!
             </button>
             <h2 className="text-3xl font-bold line-through lg:text-4xl mt-9 text-primary">
