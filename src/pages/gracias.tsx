@@ -33,7 +33,7 @@ const Gracias = () => {
         </div>
         <div className="mx-10 mt-10 md:grid lg:items-center md:grid-cols-2 lg:gap-10 lg:mx-20 text-primary">
           <div>
-            <div className="text-4xl lg:text-44">
+            <div className="text-3xl lg:text-44">
               <h1 className="mb-2 font-light leading-7 lg:mb-4">
                 ¡Felicidades
               </h1>

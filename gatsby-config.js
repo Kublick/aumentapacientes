@@ -8,6 +8,15 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-image",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Aumenta Pacientes`,
+        short_name: `aumentapacientes`,
+        start_url: `/`,
+        icon: `src/images/icon.png`,
+      },
+    },
     "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",

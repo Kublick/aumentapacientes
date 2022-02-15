@@ -9,7 +9,7 @@ type Props = {
 export const Oferta = ({ handleClick }: Props) => {
   return (
     <div className="px-8 mb-20 md:mt-16 mt-14 lg:px-24">
-      <div className="flex flex-col-reverse md:items-center md:grid md:grid-cols-2 ">
+      {/* <div className="flex flex-col-reverse md:items-center md:grid md:grid-cols-2 ">
         <div className=" text-primary">
           <h1 className="text-2xl font-bold">¿Para quien</h1>
           <h1 className="text-2xl font-bold">es este taller?</h1>
@@ -29,7 +29,7 @@ export const Oferta = ({ handleClick }: Props) => {
         <div className="mb-9 lg:mb-0 ">
           <StaticImage src="../images/mock_oferta_h1.png" alt="Mock Oferta" />
         </div>
-      </div>
+      </div> */}
       <div className="gap-4 mt-16 lg:grid lg:grid-cols-2 lg:mt-24">
         <div className="hidden lg:block">
           <StaticImage

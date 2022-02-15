@@ -10,8 +10,8 @@ import { Tecnicas } from "../components/Tecnicas";
 const IndexPage = () => {
   const registroRef = useRef<null | HTMLDivElement>(null);
 
-  function handleBackClick() {
-    registroRef.current.scrollTo({ behavior: "smooth" });
+  function handleClick() {
+    registroRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -33,7 +33,7 @@ const IndexPage = () => {
       <div ref={registroRef}>
         <Formulario />
       </div>
-      <Oferta handleClick={handleBackClick} />
+      <Oferta handleClick={handleClick} />
       <Tecnicas />
       <Formulario />
       <footer className="mt-24">
