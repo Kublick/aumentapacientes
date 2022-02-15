@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export const Tecnicas = () => {
   return (
     <>
-      <div className="px-8 mt-24 md:px-20 mb-14">
+      <div className="px-8 mt-16 md:px-20 mb-14">
         <h1 className="text-2xl font-bold text-primary">¿Que descubrirás</h1>
         <h1 className="text-2xl font-bold text-primary">
           en este entrenamiento?

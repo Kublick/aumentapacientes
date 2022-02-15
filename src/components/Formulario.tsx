@@ -49,7 +49,7 @@ export const Formulario = (): JSX.Element => {
   return (
     <>
       <div className="px-8 lg:px-24 bg-primary lg:mt-0 mt-7">
-        <div className="flex flex-col py-4 text-white md:flex-row md:justify-between ">
+        <div className="flex flex-col py-6 text-white lg:py-8 md:flex-row md:justify-between ">
           <div>
             <h1 className="text-3xl font-bold">¡Cupo limitado!</h1>
             <p className="text-base font-thin">
