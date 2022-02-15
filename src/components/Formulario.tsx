@@ -49,7 +49,7 @@ export const Formulario = (): JSX.Element => {
   return (
     <>
       <div className="px-8 lg:px-24 bg-primary lg:mt-0 mt-7">
-        <div className="flex flex-col py-8 text-white lg:flex-row lg:justify-between ">
+        <div className="flex flex-col py-4 text-white md:flex-row md:justify-between ">
           <div>
             <h1 className="text-3xl font-bold">¡Cupo limitado!</h1>
             <p className="text-base font-thin">
@@ -57,10 +57,7 @@ export const Formulario = (): JSX.Element => {
               <span className="font-bold">sin costo</span>
             </p>
           </div>
-          <form
-            className="flex flex-col gap-4 mt-8 lg:flex-row lg:mt-0 "
-            onSubmit={handleSubmit}
-          >
+          <form onSubmit={handleSubmit}>
             <input type="hidden" name="u" value="33" />
             <input type="hidden" name="f" value="33" />
             <input type="hidden" name="s" />
@@ -73,28 +70,31 @@ export const Formulario = (): JSX.Element => {
               name="or"
               value="ccdd57901eba6f15ca6262851317a292"
             />
-            <input
-              type="text"
-              name="name"
-              placeholder="Nombre"
-              className="px-8 h-14 text-primary"
-              onChange={handleChange}
-            />
+            <div className="flex flex-col gap-2 lg:flex-row mt-7 md:mt-0 md:grid lg:flex ">
+              <div className="flex flex-col gap-2 md:flex-row md:gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nombre"
+                  className="px-8 h-14 text-primary"
+                  onChange={handleChange}
+                />
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              className="px-8 h-14 text-primary"
-              onChange={handleChange}
-            />
-
-            <button
-              type="submit"
-              className="px-4 font-bold uppercase bg-secondary h-14 text-primary"
-            >
-              ¡Si, Quiero entrar!
-            </button>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  className="px-8 h-14 text-primary"
+                  onChange={handleChange}
+                />
+              </div>
+              <button
+                type="submit"
+                className="px-4 font-bold uppercase bg-secondary h-14 text-primary"
+              >
+                ¡Si, Quiero entrar!
+              </button>
+            </div>
           </form>
         </div>
       </div>
