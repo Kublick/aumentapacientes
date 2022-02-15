@@ -39,7 +39,7 @@ export const Oferta = ({ handleClick }: Props) => {
         </div>
         <div className="text-primary">
           <h1 className="text-2xl font-bold">¿Qué incluye</h1>
-          <h1 className="text-2xl font-bold">tu entrenamiento?</h1>
+          <h1 className="text-2xl font-bold">este taller?</h1>
           <div className="my-10 md:grid md:grid-cols-2 md:mt-0 ">
             <div className="flex gap-4">
               <StaticImage

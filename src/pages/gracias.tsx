@@ -9,7 +9,7 @@ declare const window: Window &
   };
 
 const Gracias = () => {
-  const whatsAppLink = "";
+  const whatsAppLink = "https://chat.whatsapp.com/Hi0NspPOIOh3jUuU8uESSI";
 
   if (typeof window !== "undefined") {
     if (window.fbq != null) {
@@ -18,7 +18,7 @@ const Gracias = () => {
   }
 
   const handleAddToWhatsapp = () => {
-    window.open("https://chat.whatsapp.com/Hi0NspPOIOh3jUuU8uESSI");
+    window.open(whatsAppLink);
   };
 
   return (
@@ -31,9 +31,9 @@ const Gracias = () => {
             className="lg:ml-20"
           />
         </div>
-        <div className="mx-10 mt-10 lg:grid lg:items-center lg:grid-cols-2 lg:gap-10 lg:mx-20 text-primary">
+        <div className="mx-10 mt-10 md:grid lg:items-center md:grid-cols-2 lg:gap-10 lg:mx-20 text-primary">
           <div>
-            <div className="text-4xl text-center lg:text-44">
+            <div className="text-4xl lg:text-44">
               <h1 className="mb-2 font-light leading-7 lg:mb-4">
                 ¡Felicidades
               </h1>
@@ -62,7 +62,7 @@ const Gracias = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="items-center justify-center hidden md:flex ">
             <CountdownCircleTimer
               isPlaying
               duration={120}
@@ -82,18 +82,18 @@ const Gracias = () => {
             </CountdownCircleTimer>
           </div>
         </div>
-        <div className="flex flex-col px-10 py-8 text-white lg:flex-row lg:items-center lg:justify-center lg:gap-28 bg-primary mt-9 lg:px-0">
+        <div className="flex flex-col px-10 py-8 text-white md:flex-row md:items-center md:justify-center md:gap-6 lg:gap-28 bg-primary mt-9 md:px-0">
           <h1 className="text-4xl font-bold">¡Nos vemos en el taller!</h1>
           <button
             type="submit"
-            className="mt-8 font-bold text-white uppercase lg:px-24 h-14 bg-whatsapp lg:mt-0"
+            className="mt-8 font-bold text-white uppercase md:px-12 lg:px-24 h-14 bg-whatsapp md:mt-0"
             onClick={handleAddToWhatsapp}
           >
             Unirme al grupo
           </button>
         </div>
       </div>
-      <div className="mt-32">
+      <div className="mt-16 lg:mt-24">
         <Footer />
       </div>
     </>
