@@ -15,11 +15,11 @@ declare const window: Window &
 const IndexPage = () => {
   const registroRef = useRef<null | HTMLDivElement>(null);
 
-  if (typeof window !== "undefined") {
-    if (window.fbq != null) {
-      window.fbq("track", "ViewContent");
-    }
-  }
+  // if (typeof window !== "undefined") {
+  //   if (window.fbq != null) {
+  //     window.fbq("track", "ViewContent");
+  //   }
+  // }
 
   function handleBackClick() {
     registroRef.current.scrollTo({ behavior: "smooth" });

@@ -18,7 +18,7 @@ const Gracias = () => {
   }
 
   const handleAddToWhatsapp = () => {
-    console.log("agregar a whatsapp", whatsAppLink);
+    window.open("https://chat.whatsapp.com/Hi0NspPOIOh3jUuU8uESSI");
   };
 
   return (
