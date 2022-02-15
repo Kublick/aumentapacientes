@@ -7,19 +7,8 @@ import { Oferta } from "../components/Oferta";
 import SEO from "../components/seo";
 import { Tecnicas } from "../components/Tecnicas";
 
-declare const window: Window &
-  typeof globalThis & {
-    fbq: any;
-  };
-
 const IndexPage = () => {
   const registroRef = useRef<null | HTMLDivElement>(null);
-
-  // if (typeof window !== "undefined") {
-  //   if (window.fbq != null) {
-  //     window.fbq("track", "ViewContent");
-  //   }
-  // }
 
   function handleBackClick() {
     registroRef.current.scrollTo({ behavior: "smooth" });
@@ -39,9 +28,8 @@ const IndexPage = () => {
           `fisioterapeutas`,
         ]}
       />
-      <header>
-        <Hero fechaEvento={"09 al 15 de Marzo"} eventTime={"13 March 2022"} />
-      </header>
+
+      <Hero fechaEvento={"10 al 15 de Marzo"} eventTime={"13 March 2022"} />
       <div ref={registroRef}>
         <Formulario />
       </div>
