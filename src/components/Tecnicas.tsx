@@ -19,7 +19,7 @@ export const Tecnicas = () => {
 							alt="oferta laptop"
 							className="mb-8"
 						/>
-						<div className="font-light text-lightgray">
+						<div className="font-light text-lightgray flex flex-col items-center">
 							<p>Clase 1</p>
 							<p className="font-bold">LA OPORTUNIDAD</p>
 							<p>
@@ -34,7 +34,7 @@ export const Tecnicas = () => {
 							alt="oferta equipo"
 							className="mb-8"
 						/>
-						<div className="font-light text-lightgray">
+						<div className="font-light text-lightgray text-center">
 							<p>Clase 2</p>
 							<p className="font-bold">EL MECANISMO</p>
 							<p>
@@ -49,7 +49,7 @@ export const Tecnicas = () => {
 							alt="oferta equipo"
 							className="mb-8"
 						/>
-						<div className="font-light text-lightgray">
+						<div className="font-light text-lightgray text-center">
 							<p>Clase 3</p>
 							<p className="font-bold">EL MAPA</p>
 							<p>
@@ -64,15 +64,13 @@ export const Tecnicas = () => {
 							alt="oferta personas"
 							className="mb-8"
 						/>
-						<div className="font-light text-lightgray">
+						<div className="font-light text-lightgray text-center">
 							<p>Clase 4</p>
 							<p className="font-bold">LA ESTRATEGIA</p>
 							<p>
 								Compartiré contigo las piezas de la estrategia que te sirven
 								para incrementar tu consulta.
 							</p>
-							Cuales son los 7 errores mas comunes que provocan que no crezca
-							nuestra lista de pacientes.
 						</div>
 					</div>
 				</div>
@@ -91,48 +89,59 @@ export const Tecnicas = () => {
 						alt="oferta laptop"
 						className="mb-8"
 					/>
-					<p className="px-12 font-light text-lightgray lg:px-0 ">
-						Como eliminar las excusas y creencias que nos auto sabotean para
-						conseguir pacientes.
-					</p>
+					<div className="font-light text-lightgray px-20 text-center">
+						<p>Clase 1</p>
+						<p className="font-bold">LA OPORTUNIDAD</p>
+						<p>
+							Descubrirás como esta era digital te permite llegar con tu
+							servicio de consulta a cientos de pacientes alrededor del mundo.
+						</p>
+					</div>
 				</div>
 				<div>
 					<StaticImage
 						src="../images/oferta_equipo.png"
 						alt="oferta equipo"
 						className="mb-8"
-						placeholder="blurred"
 					/>
-					<p className="px-12 font-light text-lightgray lg:px-0">
-						Cuales son las 3 áreas en las que nos conviene poner atención para
-						lograr tener la cantidad de pacientes que deseamos.
-					</p>
+					<div className="font-light text-lightgray px-20 text-center">
+						<p>Clase 2</p>
+						<p className="font-bold">EL MECANISMO</p>
+						<p>
+							Aprenderás el mecanismo con el que puedes vivir de tu profesión y
+							aumentar tus ingresos.
+						</p>
+					</div>
 				</div>
 				<div>
 					<StaticImage
 						src="../images/oferta_personas.png"
 						alt="oferta equipo"
 						className="mb-8"
-						loading="eager"
-						placeholder="blurred"
 					/>
-					<p className="px-12 font-light text-lightgray lg:px-0">
-						Cuales son los 3 secretos de los profesionales que tienen muchos
-						pacientes.
-					</p>
+					<div className="font-light text-lightgray px-20 text-center">
+						<p>Clase 3</p>
+						<p className="font-bold">EL MAPA</p>
+						<p>
+							Conocerás los elementos que debes tener para conseguir pacientes a
+							través de internet.
+						</p>
+					</div>
 				</div>
 				<div>
 					<StaticImage
 						src="../images/oferta_crecimiento_desktop.png"
 						alt="oferta personas"
 						className="mb-8"
-						loading="eager"
-						placeholder="blurred"
 					/>
-					<p className="px-12 font-light lg:px-0 text-lightgray">
-						Cuales son los 7 errores mas comunes que provocan que no crezca
-						nuestra lista de pacientes.
-					</p>
+					<div className="font-light text-lightgray px-20 text-center">
+						<p>Clase 4</p>
+						<p className="font-bold">LA ESTRATEGIA</p>
+						<p>
+							Compartiré contigo las piezas de la estrategia que te sirven para
+							incrementar tu consulta.
+						</p>
+					</div>
 				</div>
 			</Carousel>
 		</>
