@@ -21,7 +21,11 @@ export const Formulario = (): JSX.Element => {
 	const handleSubmit = (e: any) => {
 		e.preventDefault();
 
-		if (form.email === '' || form.fullname === '') {
+		if (
+			Object.keys(form).length === 0 ||
+			form.email === '' ||
+			form.fullname === ''
+		) {
 			setFormError('Por favor, llene todos los campos');
 			return;
 		}
@@ -74,7 +78,7 @@ export const Formulario = (): JSX.Element => {
 							<div className="flex flex-col gap-2 md:flex-row md:gap-4">
 								<input
 									type="text"
-									name="name"
+									name="fullname"
 									placeholder="Nombre"
 									className="px-8 h-14 text-primary"
 									onChange={handleChange}
@@ -95,6 +99,7 @@ export const Formulario = (): JSX.Element => {
 								¡Si, Quiero entrar!
 							</button>
 						</div>
+						<p className="mt-4 text-center text-xl font-bold">{formError}</p>
 					</form>
 				</div>
 			</div>
