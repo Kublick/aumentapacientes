@@ -36,7 +36,7 @@ export const Hero = ({ fechaEvento, eventTime }: HeroProps): JSX.Element => {
 					/>
 				)}
 			</div>
-			<div className="lg:place-self-end">
+			<div className="lg:place-self-end lg:mx-auto">
 				<div className="mt-8 text-3xl md:text-3xl lg:text-5xl text-primary ">
 					<h1 className="font-thin">Regístrate GRATIS</h1>
 
@@ -52,7 +52,7 @@ export const Hero = ({ fechaEvento, eventTime }: HeroProps): JSX.Element => {
 						</span>{' '}
 					</p>
 				</div>
-				<div className="md:flex md:justify-center lg:block">
+				<div className="flex flex-col items-center justify-center lg:block">
 					<h1 className="font-bold lg:text-3xl text-27 text-primary mb-4">
 						La oportunidad de registro expira en:
 					</h1>

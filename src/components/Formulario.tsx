@@ -94,7 +94,7 @@ export const Formulario = (): JSX.Element => {
 							</div>
 							<button
 								type="submit"
-								className="px-4 font-bold uppercase bg-secondary h-14 text-primary hover:bg-secondarylight transform active:scale-75 transition-transform"
+								className="px-4 font-bold uppercase bg-secondary h-14 text-primary hover:bg-secondarylight transform active:scale-75 transition-transform min-w-fit"
 							>
 								¡Si, Quiero entrar!
 							</button>
