@@ -7,3 +7,19 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.img {
+  width: 200px;
+  height: 59px;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
