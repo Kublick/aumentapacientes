@@ -9,6 +9,8 @@ import { Footer } from "./Footer";
 const Venta = () => {
   const unirme = useRef<null | HTMLDivElement>(null);
 
+  const saleEventDate = "15 March 2022";
+
   return (
     <>
       <div className="mx-14">
@@ -82,7 +84,7 @@ const Venta = () => {
             Elige el plan que mejor se adapte a tí
           </h1>
 
-          <SalesCards salesDate={"15 March 2022"} />
+          <SalesCards salesDate={saleEventDate} />
         </div>
 
         <div>
@@ -90,14 +92,13 @@ const Venta = () => {
             Todo esto es lo que recibes al momento de inscribirte al
             entrenamiento online.
           </p>
-          <div>
-            <StaticImage
-              src="../images/pc_desktop_mock.png"
-              alt="Aumenta Pacientes Logo"
-              className=""
-            />
-            <div className="grid mt-10 font-normal gap-7 text-lightgray">
-              <div>
+          <div className="block md:gap-x-6 md:grid md:grid-cols-2">
+            <div>
+              <StaticImage
+                src="../images/pc_desktop_mock.png"
+                alt="Aumenta Pacientes Logo"
+              />
+              <div className="mt-7">
                 <p className="text-lg ">
                   <span className="font-bold text-primary">
                     PROGRAMA INTENSIVO DE 12 SEMANAS 100% ONLINE
@@ -109,34 +110,47 @@ const Venta = () => {
                 <p className="font-bold text-primary">
                   Valorado en $997 dólares
                 </p>
+                <div className="mt-7">
+                  <p>
+                    {" "}
+                    <span className="font-bold text-primary">
+                      6 MODULOS DE TRABAJO CON LECCIONES DE VIDEO EN HD{" "}
+                    </span>{" "}
+                    donde siguiendo la estrategia D.E.P.E. avanzarás paso a paso
+                    de forma ordenada, enfocada, pero sobre todo a tu ritmo por
+                    que tu eliges tus propios horarios para ver las lecciones
+                    que ya témenos pregrabadas y lo puedes hacer desde tu
+                    computadora o desde tu celular.
+                  </p>
+                </div>
+                <div className="mt-7">
+                  <p>
+                    <span className="font-bold text-primary">
+                      ACCESO POR TODO UN AǸO AL PORTAL ONLINE
+                    </span>{" "}
+                    para que así puedas ver y repetir las lecciones luego de
+                    concluir el programa las veces que tu preﬁeras.
+                  </p>
+                  <p className="font-bold text-primary">
+                    Valorado en $497 dólares
+                  </p>
+                </div>
+                <div className="mt-7">
+                  <p>
+                    <span className="font-bold text-primary">
+                      12 MENTORIAS GRUPALES EN VIVO ONLINE
+                    </span>{" "}
+                    con la psicóloga Berenice Bastidas para obtener seguimiento,
+                    responder preguntas, aclarar dudas, obtener feedback de tus
+                    avances y ayudarte a lograr alcanzar tu meta.
+                  </p>
+                  <p className="font-bold text-primary">
+                    Valorado en $597 dólares
+                  </p>
+                </div>
               </div>
-
-              <div>
-                <p>
-                  {" "}
-                  <span className="text-bold">
-                    6 MODULOS DE TRABAJO CON LECCIONES DE VIDEO EN HD{" "}
-                  </span>{" "}
-                  donde siguiendo la estrategia D.E.P.E. avanzarás paso a paso
-                  de forma ordenada, enfocada, pero sobre todo a tu ritmo por
-                  que tu eliges tus propios horarios para ver las lecciones que
-                  ya témenos pregrabadas y lo puedes hacer desde tu computadora
-                  o desde tu celular.
-                </p>
-              </div>
-              <div>
-                <p>
-                  <span className="font-bold text-primary">
-                    ACCESO POR TODO UN AǸO AL PORTAL ONLINE
-                  </span>{" "}
-                  para que así puedas ver y repetir las lecciones luego de
-                  concluir el programa las veces que tu preﬁeras.
-                </p>
-                <p className="font-bold text-primary">
-                  Valorado en $497 dólares
-                </p>
-              </div>
-
+            </div>
+            <div className="grid mt-10 font-normal md:mt-0 text-lightgray">
               <div>
                 <p>
                   <span className="font-bold text-primary">
@@ -154,20 +168,8 @@ const Venta = () => {
                   Valorado en $497 dólares
                 </p>
               </div>
-              <div>
-                <p>
-                  <span className="font-bold text-primary">
-                    12 MENTORIAS GRUPALES EN VIVO ONLINE
-                  </span>{" "}
-                  con la psicóloga Berenice Bastidas para obtener seguimiento,
-                  responder preguntas, aclarar dudas, obtener feedback de tus
-                  avances y ayudarte a lograr alcanzar tu meta.
-                </p>
-                <p className="font-bold text-primary">
-                  Valorado en $597 dólares
-                </p>
-              </div>
-              <div>
+
+              <div className="mt-7 m:mt-0">
                 <p>
                   <span className="font-bold text-primary">
                     PLAN DE ESTUDIOS EN PDF
@@ -180,7 +182,7 @@ const Venta = () => {
                   Valorado en $47 dólares
                 </p>
               </div>
-              <div>
+              <div className="mt-7 m:mt-0">
                 <p>
                   <span className="font-bold text-primary">
                     METAS SEMANALES DE TRABAJO
@@ -191,14 +193,16 @@ const Venta = () => {
                   avanzas en tu negocio.
                 </p>
               </div>
-              <button
-                className="px-12 py-4 text-base font-bold uppercase transition-transform transform border-2 md:px-20 bg-secondary text-primary border-primary active:scale-75 hover:bg-secondarylight"
-                onClick={() =>
-                  unirme.current.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                ¡Quiero Unirme!
-              </button>
+              <div className="mx-auto place-self-end mt-7 m:mt-0">
+                <button
+                  className="px-12 py-4 text-base font-bold uppercase transition-transform transform border-2 md:px-20 bg-secondary text-primary border-primary active:scale-75 hover:bg-secondarylight"
+                  onClick={() =>
+                    unirme.current.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  ¡Quiero Unirme!
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -293,7 +297,7 @@ const Venta = () => {
             ¿Listo para crear la vida que sueñas? Elige el plan que mejor se
             adapte a tí
           </h1>
-          <SalesCards />
+          <SalesCards salesDate={saleEventDate} />
           <div className="mt-16">
             <Testimonios />
           </div>
