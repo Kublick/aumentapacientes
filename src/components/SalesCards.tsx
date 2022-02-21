@@ -11,7 +11,11 @@ import { useWindowSize } from "../hooks/useWindowSize";
 import Counter from "./Counter";
 import { PriceCard } from "./PriceCard";
 
-export const SalesCards = () => {
+interface Props {
+  salesDate: string;
+}
+
+export const SalesCards = ({ salesDate }: Props) => {
   const { desktopImage, tabletImage } = useStaticQuery(
     graphql`
       query {
@@ -20,17 +24,27 @@ export const SalesCards = () => {
             gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
           }
         }
+        tabletImage: file(relativePath: { eq: "bere_garantia_tablet.png" }) {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+          }
+        }
       }
     `
   );
 
-  const images = getImage(desktopImage);
+  const images = withArtDirection(getImage(tabletImage), [
+    {
+      media: `(max-width: ${1280}px)`,
+      image: getImage(desktopImage),
+    },
+  ]);
 
   const { width } = useWindowSize();
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (width <= 863) {
+    if (width <= 833) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -68,27 +82,27 @@ export const SalesCards = () => {
           url="https://pay.hotmart.com/W42168207B?off=j6xxy1dq"
         />
       </div>
-      <div className="flex flex-col md:grid md:grid-cols-2 mt-9 ">
+      <div className="flex flex-col items-center md:grid md:grid-cols-2 mt-9 ">
         {isMobile ? (
           <div className="flex flex-col items-center">
             <StaticImage
               src="../images/bere_garantia_mobile.png"
               alt="oferta laptop"
             />
-            <Counter date={Date.now() + 100000} />
+            <Counter date={salesDate} />
           </div>
         ) : (
-          <div className="flex flex-col items-center self-end gap-16">
+          <div className="flex flex-col items-center self-end lg:gap-16">
             <StaticImage
               src="../images/logo_garantia_desktop.png"
               alt="oferta laptop"
               className=""
             />
-            <Counter date={Date.now() + 100000} />
+            <Counter date={salesDate} />
           </div>
         )}
         {!isMobile && (
-          <GatsbyImage image={images} alt="foto anfitrion" className="px-4" />
+          <GatsbyImage image={images} alt="foto anfitrion" className="" />
         )}
       </div>
     </div>

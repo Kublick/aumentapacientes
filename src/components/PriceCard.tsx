@@ -39,12 +39,12 @@ export const PriceCard = ({
   );
 
   return (
-    <div className="border-2 md:w-60 lg:w-[348px] border-primary">
+    <div className="border-2 md:w-[235px] lg:w-[348px] border-primary">
       <div className="flex items-center justify-center h-[60px] gap-2 text-2xl font-semibold text-white bg-primary ">
         <span>{arrowClass}</span>
         {title}
       </div>
-      <div className="flex flex-col items-center p-[21px]">
+      <div className="flex flex-col items-center p-4">
         <p className="mb-1 text-xl font-light text-lightgray">{text}</p>
         <p className="mt-2 text-3xl font-bold text-primary ">{cost}</p>
         <button

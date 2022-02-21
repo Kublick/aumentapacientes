@@ -82,7 +82,7 @@ const Venta = () => {
             Elige el plan que mejor se adapte a tí
           </h1>
 
-          <SalesCards />
+          <SalesCards salesDate={"15 March 2022"} />
         </div>
 
         <div>
