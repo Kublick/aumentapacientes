@@ -39,21 +39,23 @@ export const PriceCard = ({
   );
 
   return (
-    <div className="border-2 md:w-1/3 border-primary">
-      <div className="flex items-center justify-center gap-2 text-2xl font-semibold text-white bg-primary ">
+    <div className="border-2 md:w-60 lg:w-[348px] border-primary">
+      <div className="flex items-center justify-center h-[60px] gap-2 text-2xl font-semibold text-white bg-primary ">
         <span>{arrowClass}</span>
         {title}
       </div>
-      <div className="flex flex-col items-center p-4">
+      <div className="flex flex-col items-center p-[21px]">
         <p className="mb-1 text-xl font-light text-lightgray">{text}</p>
         <p className="mt-2 text-3xl font-bold text-primary ">{cost}</p>
         <button
-          className={`${buttonStyle} text-base font-semibold border-primary border-2 w-full py-2 mt-4 text-primary`}
+          className={`${buttonStyle} text-base font-semibold border-primary border-4 w-full px-2 py-4 mt-4 text-primary`}
           onClick={() => window.open(url)}
         >
           Seleccionar
         </button>
-        <p className="p-2 text-xs font-semibold text-primary">{payTerm}</p>
+        <p className="p-2 text-xs font-semibold text-center text-primary">
+          {payTerm}
+        </p>
       </div>
     </div>
   );

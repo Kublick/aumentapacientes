@@ -12,12 +12,14 @@ const Venta = () => {
   return (
     <>
       <div className="mx-14">
-        <div className="flex flex-col items-center mt-10 md:grid md:grid-cols-2">
-          <StaticImage
-            src="../images/aumenta_pacientes_logo.png"
-            alt="Aumenta Pacientes Logo"
-            className="mb-10 md:mb-0 lg:mb-0 img"
-          />
+        <div className="grid mt-10 md:grid-cols-2">
+          <div className="flex justify-center md:block">
+            <StaticImage
+              src="../images/aumenta_pacientes_logo.png"
+              alt="Aumenta Pacientes Logo"
+              className="mb-10 md:mb-0 lg:mb-0 img"
+            />
+          </div>
 
           <h1 className="text-xl font-bold text-center md:text-right md:mr-7 text-primary lg:text-left lg:text-4xl">
             ¡INSCRIPCIONES ABIERTAS!
@@ -38,12 +40,12 @@ const Venta = () => {
           </div>
           <div className="grid gap-6 mt-7 text-primary md:grid-cols-2 lg:grid-cols-1">
             <div>
-              <h2 className="text-xl font-semibold">
+              <h2 className="text-xl font-semibold lg:text-2xl">
                 ¡Tu ya eres éxito! Solo hagamos que se manifieste
               </h2>
             </div>
             <div>
-              <h3>
+              <h3 className="lg:text-2xl">
                 Bonos de acción rápida (Solo disponibles las primeras 24 horas)
               </h3>
             </div>
@@ -79,6 +81,7 @@ const Venta = () => {
           <h1 className="mt-16 text-xl font-bold text-primary">
             Elige el plan que mejor se adapte a tí
           </h1>
+
           <SalesCards />
         </div>
 

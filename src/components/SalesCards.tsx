@@ -39,7 +39,7 @@ export const SalesCards = () => {
 
   return (
     <div>
-      <div className="flex flex-col gap-4 mt-8 md:flex-row md:justify-center">
+      <div className="flex flex-col gap-4 mt-8 md:flex-row md:justify-around">
         <PriceCard
           arrow={true}
           title="PLAN ÚNICO"
