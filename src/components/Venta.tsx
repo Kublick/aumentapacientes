@@ -23,7 +23,7 @@ const Venta = () => {
             ¡INSCRIPCIONES ABIERTAS!
           </h1>
         </div>
-        <div className="grid lg:grid-cols-2">
+        <div className="grid lg:grid-cols-2 lg:gap-7">
           <div className="mt-8">
             <div className="player-wrapper">
               <ReactPlayer
@@ -36,34 +36,43 @@ const Venta = () => {
               />
             </div>
           </div>
-          <div className="mt-7 text-primary">
-            <h2 className="text-xl font-semibold">
-              ¡Tu ya eres éxito! Solo hagamos que se manifieste
-            </h2>
-            <h3 className="mt-7">
-              Bonos de acción rápida (Solo disponibles las primeras 24 horas)
-            </h3>
-            <p className="text-lg mt-7">
-              {" "}
-              <span className="font-bold">
-                5 SESIONES INDIVIDUALES DE MENTORÍA
-              </span>{" "}
-              uno a uno con la psicóloga Berenice Bastidas durante el
-              entrenamiento, donde podrás recibir de primera mano ayuda enfocada
-              únicamente en tu proyecto profesional.{" "}
-            </p>
-            <p className="font-bold">Valorado en $500 dólares</p>
-            <p className="text-lg mt-7">
-              {" "}
-              <span className="font-bold">
-                MANUAL HERRAMIENTAS DIGITALES
-              </span>{" "}
-              para que no tengas que pasar horas buscando herramientas buenas,
-              este manual en lista las mejores herramientas digitales y
-              plataformas con las que podrás trabajar y muchas de ellas en su
-              versión gratuita.
-            </p>
-            <p className="font-bold">Valorado en $47 dólares</p>
+          <div className="grid gap-6 mt-7 text-primary md:grid-cols-2 lg:grid-cols-1">
+            <div>
+              <h2 className="text-xl font-semibold">
+                ¡Tu ya eres éxito! Solo hagamos que se manifieste
+              </h2>
+            </div>
+            <div>
+              <h3>
+                Bonos de acción rápida (Solo disponibles las primeras 24 horas)
+              </h3>
+            </div>
+            <div>
+              <p className="text-lg">
+                {" "}
+                <span className="font-bold">
+                  5 SESIONES INDIVIDUALES DE MENTORÍA
+                </span>{" "}
+                uno a uno con la psicóloga Berenice Bastidas durante el
+                entrenamiento, donde podrás recibir de primera mano ayuda
+                enfocada únicamente en tu proyecto profesional.{" "}
+              </p>
+              <p className="font-bold">Valorado en $500 dólares</p>
+            </div>
+
+            <div>
+              <p className="text-lg">
+                {" "}
+                <span className="font-bold">
+                  MANUAL HERRAMIENTAS DIGITALES
+                </span>{" "}
+                para que no tengas que pasar horas buscando herramientas buenas,
+                este manual en lista las mejores herramientas digitales y
+                plataformas con las que podrás trabajar y muchas de ellas en su
+                versión gratuita.
+              </p>
+              <p className="font-bold">Valorado en $47 dólares</p>
+            </div>
           </div>
         </div>
         <div ref={unirme}>
