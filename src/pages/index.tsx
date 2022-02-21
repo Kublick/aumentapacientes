@@ -34,7 +34,6 @@ const IndexPage = () => {
       <div ref={registroRef}>
         <Formulario />
       </div>
-
       <Oferta handleClick={handleClick} />
       <Tecnicas />
       <Formulario />

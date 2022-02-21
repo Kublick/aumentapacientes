@@ -27,7 +27,6 @@ export const SalesCards = () => {
   const images = getImage(desktopImage);
 
   const { width } = useWindowSize();
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
