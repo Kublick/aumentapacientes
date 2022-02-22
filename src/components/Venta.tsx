@@ -206,10 +206,11 @@ const Venta = () => {
             </div>
           </div>
         </div>
-        <div className="my-9">
+        <div className="grid my-9 md:grid-cols-2 gap-7">
           <h1 className="text-xl font-bold text-primary">
             SI ACCEDES HOY, CONSIGUES ESTOS RECURSOS DE FORMA 100% GRATUITA
           </h1>
+          <div />
           <div className="text-lg text-lightgray ">
             <StaticImage
               src="../images/bono_1_mobile.png"
