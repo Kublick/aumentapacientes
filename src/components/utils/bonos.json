@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "BONO 1: CREA Y VENDE TU PROPIO CURSO ONLINE",
-      "description": "con este bono y sin la necesidad de ser un experto aprenderás a crear desde cero tu curso online y empezar a ganar de inmediato dinero con el por que además te voy a enseñar a venderlo.",
+      "description": " con este bono y sin la necesidad de ser un experto aprenderás a crear desde cero tu curso online y empezar a ganar de inmediato dinero con el por que además te voy a enseñar a venderlo.",
       "value": "Valorado en $600 dólares",
       "img": "../images/bono_1_mobile.png"
     },
@@ -16,7 +16,7 @@
     },
     {
       "id": "3",
-      "title": "BONO 3: METODOS DE PAGO ONLINE",
+      "title": "BONO 3: METODOS DE PAGO ONLINE ",
       "description": "Aprenderás la metodología para recibir pagos por tus servicios de consulta desde diferentes países del mundo.",
       "value": "Valorado en $147 dólares",
       "img": "../../images/bono_3_mobile.png"
@@ -26,7 +26,7 @@
       "title": "BONO 4: HABLA FRENTE A LA CAMARA CON SEGURIDAD",
       "description": "perderás el miedo y la vergüenza de hablar en redes sociales.",
       "value": "Valorado en $247 dólares",
-      "img": "../../images/bono_3_mobile.png"
+      "img": "../../images/bono_4_mobile.png"
     }
   ]
 }

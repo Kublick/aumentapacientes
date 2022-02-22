@@ -206,7 +206,7 @@ const Venta = () => {
             </div>
           </div>
         </div>
-        <div className="grid my-9 md:grid-cols-2 gap-7">
+        <div className="grid items-center my-9 md:grid-cols-2 gap-7">
           <h1 className="text-xl font-bold text-primary">
             SI ACCEDES HOY, CONSIGUES ESTOS RECURSOS DE FORMA 100% GRATUITA
           </h1>
@@ -215,7 +215,7 @@ const Venta = () => {
             <StaticImage
               src="../images/bono_1_mobile.png"
               alt="bono 1"
-              className="my-8"
+              className="mb-8"
             />
             <p>
               {" "}
@@ -230,13 +230,13 @@ const Venta = () => {
             <StaticImage
               src="../images/bono_2_mobile.png"
               alt="bono 3"
-              className="my-8"
+              className="mb-8"
             />
             <p>
               {" "}
               <span className="font-bold text-primary">
                 {bonos.bonos[1].title}
-              </span>
+              </span>{" "}
               {bonos.bonos[1].description}
             </p>
             <p className="font-bold text-primary">{bonos.bonos[1].value}</p>
@@ -245,7 +245,7 @@ const Venta = () => {
             <StaticImage
               src="../images/bono_3_mobile.png"
               alt="bono 3"
-              className="my-8"
+              className="mb-8"
             />
             <p>
               {" "}
@@ -260,7 +260,7 @@ const Venta = () => {
             <StaticImage
               src="../images/bono_4_mobile.png"
               alt="bono 4"
-              className="my-8"
+              className="mb-8"
             />
             <p>
               {" "}
@@ -271,37 +271,37 @@ const Venta = () => {
             </p>
             <p className="font-bold text-primary">{bonos.bonos[3].value}</p>
           </div>
-          <p className="mt-16 text-lg text-lightgray">
-            Sin duda es muchísimo valor el que tendrás con el entrenamiento
-            completo y además con los bonos de regalo tienes acceso a más de
-            <span className="font-bold text-primary"> $3,600 dólares</span> en
-            contenido de valor y recursos. Si pagaras todo esto por separado te
-            saldría en eso… Pero hoy tengo una invitación, es una oferta
-            especial para ti, hoy tu puedes reservar tu inscripción al
-            entrenamiento con un primer pago de{" "}
-            <span className="font-bold text-primary"> $97 dólares </span> y
-            luego 5 pagos mas de $97 dólares… O si lo prefieres puedes ahorrarte
-            $85 dólares haciendo un pago único de $497 dólares el tipo de cambio
-            y el IVA dependerá de cada país.
-          </p>
-          <p className="text-lg text-lightgray my-7">
-            Además tienes{" "}
-            <span className="px-2 font-bold text-primary bg-secondary">
-              {" "}
-              15 días de GARANTIA
-            </span>
-            podrás empezar la formación conocer a todos tus compañeros empezar a
-            formarte y si no te gusta lo que vez, si sientes que no es lo tuyo
-            te devuelvo el 100% del importe pagado.
-          </p>
-          <h1 className="mt-16 mb-8 text-xl font-bold text-primary">
-            ¿Listo para crear la vida que sueñas? Elige el plan que mejor se
-            adapte a tí
-          </h1>
-          <SalesCards salesDate={saleEventDate} />
-          <div className="mt-16">
-            <Testimonios />
-          </div>
+        </div>
+        <p className="mt-16 text-lg text-lightgray">
+          Sin duda es muchísimo valor el que tendrás con el entrenamiento
+          completo y además con los bonos de regalo tienes acceso a más de
+          <span className="font-bold text-primary"> $3,600 dólares</span> en
+          contenido de valor y recursos. Si pagaras todo esto por separado te
+          saldría en eso… Pero hoy tengo una invitación, es una oferta especial
+          para ti, hoy tu puedes reservar tu inscripción al entrenamiento con un
+          primer pago de{" "}
+          <span className="font-bold text-primary"> $97 dólares </span> y luego
+          5 pagos mas de $97 dólares… O si lo prefieres puedes ahorrarte $85
+          dólares haciendo un pago único de $497 dólares el tipo de cambio y el
+          IVA dependerá de cada país.
+        </p>
+        <p className="text-lg text-lightgray my-7">
+          Además tienes{" "}
+          <span className="px-2 font-bold text-primary bg-secondary">
+            {" "}
+            15 días de GARANTIA
+          </span>
+          podrás empezar la formación conocer a todos tus compañeros empezar a
+          formarte y si no te gusta lo que vez, si sientes que no es lo tuyo te
+          devuelvo el 100% del importe pagado.
+        </p>
+        <h1 className="mt-16 mb-8 text-xl font-bold text-primary">
+          ¿Listo para crear la vida que sueñas? Elige el plan que mejor se
+          adapte a tí
+        </h1>
+        <SalesCards salesDate={saleEventDate} />
+        <div className="my-16">
+          <Testimonios />
         </div>
         <Footer />
       </div>
