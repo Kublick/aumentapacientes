@@ -1,8 +1,8 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Videoplayer from "../components/Videoplayer";
-import { whatsapp } from "../components/utils/svg";
 import { CommentsFacebook } from "../components/CommentsFacebook";
+import { Testimonios } from "../components/Testimonios";
 
 export const S1 = () => {
   const getWorkBook = () => {
@@ -18,11 +18,11 @@ export const S1 = () => {
   return (
     <div>
       <div className="pt-10 mx-9 lg:mt-5">
-        <div className="flex justify-center lg:block">
+        <div className="flex justify-center md:block">
           <StaticImage
             src="../images/aumenta_pacientes_logo.png"
             alt="Aumenta Pacientes Logo"
-            className="lg:ml-20"
+            className=""
           />
         </div>
         <h1 className="mt-12 font-light text-primary text-27 md:w-1/2">
@@ -67,7 +67,10 @@ export const S1 = () => {
             Agrega un comentario público…
           </p>
         </div>
-        <CommentsFacebook />
+        <div className="md:grid md:grid-cols-2 md:gap-4">
+          <CommentsFacebook />
+          <Testimonios />
+        </div>
       </div>
     </div>
   );
