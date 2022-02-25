@@ -2,6 +2,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Footer } from "../components/Footer";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import { useGetUrls } from "../hooks/useGetUrls";
 
 declare const window: Window &
   typeof globalThis & {
@@ -9,7 +10,7 @@ declare const window: Window &
   };
 
 const Gracias = () => {
-  const whatsAppLink = "https://chat.whatsapp.com/Ikx3ZYUAebU4bJ5epbAuBy";
+  const urls = useGetUrls();
 
   if (typeof window !== "undefined") {
     if (window.fbq != null) {
@@ -18,7 +19,7 @@ const Gracias = () => {
   }
 
   const handleAddToWhatsapp = () => {
-    window.open(whatsAppLink);
+    window.open(urls);
   };
 
   return (
