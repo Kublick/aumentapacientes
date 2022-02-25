@@ -1,9 +1,9 @@
 const usePostUrl = ({ group }) => {
   const updateUrl = async () => {
-    console.log(group);
+    const backend = "http://209.145.48.29:4000/links";
     let id = "621873e0c4b7aba94dbc3dd9";
     try {
-      const response = await fetch(`${process.env.BACKEND}/${id}`, {
+      const response = await fetch(`${backend}/${id}`, {
         method: "PATCH",
         mode: "cors",
         headers: {
