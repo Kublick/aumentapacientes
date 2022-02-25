@@ -15,6 +15,7 @@
 		"clean": "gatsby clean"
 	},
 	"dependencies": {
+		"dotenv": "^16.0.0",
 		"gatsby": "^4.6.2",
 		"gatsby-plugin-facebook-pixel": "^1.0.8",
 		"gatsby-plugin-image": "^2.7.0",

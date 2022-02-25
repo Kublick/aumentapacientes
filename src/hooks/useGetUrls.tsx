@@ -6,7 +6,7 @@ export const useGetUrls = (): any => {
   useEffect(() => {
     const getUrls = async () => {
       try {
-        const response = await fetch("http://209.145.48.29:4000/links");
+        const response = await fetch(process.env.BACKEND);
         const data = await response.json();
         console.log(data[0].whatsappAumenta);
         setUrls(data[0].whatsappAumenta);
