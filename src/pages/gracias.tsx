@@ -10,7 +10,8 @@ declare const window: Window &
   };
 
 const Gracias = () => {
-  const urls = useGetUrls();
+  // const urls = useGetUrls();
+  const whatsAppLink = "https://chat.whatsapp.com/Ikx3ZYUAebU4bJ5epbAuBy";
 
   if (typeof window !== "undefined") {
     if (window.fbq != null) {
@@ -19,7 +20,7 @@ const Gracias = () => {
   }
 
   const handleAddToWhatsapp = () => {
-    window.open(urls);
+    window.open(whatsAppLink);
   };
 
   return (
