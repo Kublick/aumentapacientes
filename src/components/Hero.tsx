@@ -37,7 +37,14 @@ export const Hero = ({ fechaEvento, eventTime }: HeroProps): JSX.Element => {
 				)}
 			</div>
 			<div className="lg:place-self-end lg:mx-auto">
-				<div className="mt-8 text-3xl md:text-3xl lg:text-5xl text-primary ">
+				<h1 className="mt-8 md:mt-0 text-lg lg:text-2xl text-primary bg-secondary">
+					<span className="font-bold text-2xl">
+						Descubre la estrategia comprobada
+					</span>{' '}
+					para conseguir pacientes en redes sociales, aunque no tengas
+					experiencia previa ni conocimientos o estudios de marketing.
+				</h1>
+				<div className="mt-10 text-3xl md:text-3xl lg:text-5xl text-primary ">
 					<h1 className="font-thin">Regístrate GRATIS</h1>
 
 					<h1 className="font-bold lg:text-3xl text-27">
