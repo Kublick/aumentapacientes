@@ -5,14 +5,14 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export const Tecnicas = () => {
 	return (
-		<>
-			<div className="px-8 mt-16 md:px-20 mb-14">
+		<div className="max-w-7xl mx-auto">
+			<div className="px-8 mt-16  mb-14 ">
 				<h1 className="text-2xl font-bold text-primary">¿Que descubrirás</h1>
 				<h1 className="text-2xl font-bold text-primary">en este taller?</h1>
 			</div>
 			{/* <div className="container mx-auto mb-40 background-image"> */}
 			<div className="hidden mx-auto mb-40 lg:block">
-				<div className="relative flex flex-col gap-4 px-6 mx-20 md:grid md:grid-cols-4 top-14">
+				<div className="relative flex flex-col justify-between px-6 mx-20 md:mx-0 md:grid md:grid-cols-4 top-14">
 					<div>
 						<StaticImage
 							src="../images/oferta_laptop.png"
@@ -144,6 +144,6 @@ export const Tecnicas = () => {
 					</div>
 				</div>
 			</Carousel>
-		</>
+		</div>
 	);
 };
