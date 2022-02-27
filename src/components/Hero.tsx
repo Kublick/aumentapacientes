@@ -8,7 +8,7 @@ interface HeroProps {
 	eventTime: string;
 }
 
-export const Hero = ({ fechaEvento, eventTime }: HeroProps): JSX.Element => {
+export const Hero = ({ fechaEvento }: HeroProps): JSX.Element => {
 	const { width } = useWindowSize();
 	const [showImage, setShowImage] = useState(true);
 
@@ -38,7 +38,7 @@ export const Hero = ({ fechaEvento, eventTime }: HeroProps): JSX.Element => {
 					)}
 				</div>
 				<div className="lg:place-self-end lg:mx-auto">
-					<h1 className="mt-8 md:mt-0 text-lg lg:text-2xl text-primary bg-secondary">
+					<h1 className="mt-8 md:mt-0 text-lg lg:text-2xl text-primary bg-secondary p-2">
 						<span className="font-bold text-2xl">
 							Descubre la estrategia comprobada
 						</span>{' '}
