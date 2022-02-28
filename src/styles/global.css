@@ -3,23 +3,68 @@
 @tailwind utilities;
 
 .background-image {
-  background-image: url("../images/oferta_rectangle.png");
-  background-position: center;
-  background-repeat: no-repeat;
+	background-image: url('../images/oferta_rectangle.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .img {
-  width: 200px;
-  height: 59px;
+	width: 200px;
+	height: 59px;
 }
 
 .player-wrapper {
-  position: relative;
-  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+	position: relative;
+	padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
 }
 
 .react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
+
+.float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	border-radius: 50px;
+	text-align: center;
+	z-index: 9999;
+}
+
+.my-float {
+	margin-top: 22px;
+}
+
+.tooltip-container {
+	position: relative;
+}
+
+.tooltip-box {
+	position: absolute;
+	background: #cdd8ea;
+	color: #1a1818;
+	padding: 5px 10px;
+	border-radius: 5px;
+	bottom: calc(100% + 5px);
+	display: none;
+	right: 20px;
+	min-width: 200px;
+	max-width: 300px;
+}
+
+.tooltip-box.visible {
+	display: block;
+}
+
+/* .tooltip-arrow {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
+} */

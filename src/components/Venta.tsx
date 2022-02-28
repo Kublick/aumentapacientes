@@ -5,6 +5,7 @@ import { SalesCards } from './SalesCards';
 import bonos from '../components/utils/bonos.json';
 import { Testimonios } from './Testimonios';
 import { Footer } from './Footer';
+import { FAB } from './FAB';
 
 const Venta = () => {
 	const unirme = useRef<null | HTMLDivElement>(null);
@@ -79,6 +80,7 @@ const Venta = () => {
 						</div>
 					</div>
 				</div>
+				<FAB />
 				<div ref={unirme}>
 					<h1 className="mt-16 text-xl font-bold text-primary">
 						Elige el plan que mejor se adapte a tí
@@ -86,7 +88,7 @@ const Venta = () => {
 
 					<SalesCards salesDate={saleEventDate} />
 				</div>
-
+				<div className="absolute right-10"></div>
 				<div>
 					<p className="my-16 text-xl text-primary">
 						Todo esto es lo que recibes al momento de inscribirte al
