@@ -57,7 +57,7 @@ export const SalesCards = ({ salesDate }: Props) => {
 				<PriceCard
 					arrow={true}
 					title="PLAN ÚNICO"
-					text="Ahorra 85 dólares"
+					text="Ahorra 38 dólares"
 					payTerm="*Realiza un solo pago"
 					cost="$497 USD"
 					buttonStyle="bg-secondary"
