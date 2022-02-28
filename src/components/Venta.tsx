@@ -8,6 +8,8 @@ import { Footer } from './Footer';
 import { FAB } from './FAB';
 
 const Venta = () => {
+	const videoLink = 'https://youtu.be/rEB2Stu9cX4';
+
 	const unirme = useRef<null | HTMLDivElement>(null);
 
 	const saleEventDate = '15 March 2022';
@@ -28,11 +30,11 @@ const Venta = () => {
 						¡INSCRIPCIONES ABIERTAS!
 					</h1>
 				</div>
-				<div className="grid lg:grid-cols-2 lg:gap-7">
+				<div className="grid lg:grid-cols-2 lg:gap-7 items-center">
 					<div className="mt-8">
 						<div className="player-wrapper">
 							<ReactPlayer
-								url={'https://youtu.be/q0LBG3uvFV4?t=5579'}
+								url={videoLink}
 								playing={false}
 								controls={false}
 								className="react-player"
