@@ -199,7 +199,7 @@ const Venta = () => {
 							</div>
 							<div className="mx-auto place-self-end mt-7 m:mt-0">
 								<button
-									className="px-12 py-4 text-base font-bold uppercase transition-transform transform border-4 md:px-20 bg-secondary text-primary border-primary active:scale-75 hover:bg-secondarylight"
+									className="px-12 py-4 text-base font-bold uppercase transition-transform transform border-4 md:px-20 bg-secondary text-primary border-primary active:scale-75 hover:bg-secondarylight rounded-lg"
 									onClick={() =>
 										unirme.current.scrollIntoView({ behavior: 'smooth' })
 									}

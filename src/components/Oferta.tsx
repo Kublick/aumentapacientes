@@ -71,7 +71,7 @@ export const Oferta = ({ handleClick }: Props) => {
 					</div>
 					<div className="flex flex-col items-center mt-9">
 						<button
-							className="px-12 py-4 text-base font-bold uppercase border-2 md:px-20 bg-secondary text-primary border-primary transform active:scale-75 transition-transform hover:bg-secondarylight"
+							className="px-12 py-4 text-base font-bold uppercase border-2 md:px-20 bg-secondary text-primary border-primary transform active:scale-75 transition-transform hover:bg-secondarylight rounded-lg"
 							onClick={handleClick}
 						>
 							¡Quiero registrarme!

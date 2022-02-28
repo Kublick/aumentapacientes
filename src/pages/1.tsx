@@ -3,6 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Videoplayer from '../components/Videoplayer';
 import { CommentsFacebook } from '../components/CommentsFacebook';
 import { Testimonios } from '../components/Testimonios';
+import { SocialButtons } from '../components/SocialButtons';
 
 export const S1 = () => {
 	const videoUrl = 'https://youtu.be/WDBrfb8tRUI';
@@ -15,6 +16,10 @@ export const S1 = () => {
 
 	const whatsappGroup = () => {
 		window.open('https://chat.whatsapp.com/JQ2qY3qWZ8qLzw1BZHkMZO');
+	};
+
+	const fbGroup = () => {
+		window.open('https://www.facebook.com/groups/561601284963553/');
 	};
 
 	return (
@@ -44,23 +49,7 @@ export const S1 = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-col gap-4 md:gap-8 mt-7 md:flex-row">
-					<button
-						className="w-full py-4 text-base font-bold transition-transform transform border-2 bg-secondary text-primary border-primary active:scale-75 hover:bg-secondarylight"
-						onClick={() => getWorkBook()}
-					>
-						Cuaderno de Trabajo
-					</button>
-					<button
-						className="w-full py-4 text-base font-bold text-white transition-transform transform bg-whatsapp active:scale-75 "
-						onClick={() => whatsappGroup()}
-					>
-						Grupo de Whatsapp
-					</button>
-					<button className="w-full py-4 text-base font-bold uppercase transition-transform transform border-2 bg-secondary text-primary border-primary active:scale-75 hover:bg-secondarylight">
-						No te lo pierdas
-					</button>
-				</div>
+				<SocialButtons />
 				<div className="my-20">
 					<p className="text-base font-bold text-primary">
 						Agrega un comentario público…

@@ -27,7 +27,7 @@ export const Hero = ({ fechaEvento }: HeroProps): JSX.Element => {
 					<StaticImage
 						src="../images/aumenta_pacientes_logo.png"
 						alt="Aumenta Pacientes Logo"
-						className="lg:mx-12"
+						className="lg:mx-12 md:mb-10 "
 					/>
 					{showImage && (
 						<StaticImage

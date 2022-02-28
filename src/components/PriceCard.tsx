@@ -48,7 +48,7 @@ export const PriceCard = ({
 				<p className="mb-1 text-xl font-light text-lightgray">{text}</p>
 				<p className="mt-2 text-3xl font-bold text-primary ">{cost}</p>
 				<button
-					className={`${buttonStyle} text-base font-semibold border-primary border-4 w-full px-2 py-4 mt-4 text-primary hover:bg-secondarylight hover:opacity-80`}
+					className={`${buttonStyle} text-base font-semibold border-primary border-2 w-full px-2 py-4 mt-4 text-primary hover:bg-secondarylight hover:opacity-80 rounded-lg hover:bg-transparent`}
 					onClick={() => window.open(url)}
 				>
 					Seleccionar
