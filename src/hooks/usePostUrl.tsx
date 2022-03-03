@@ -1,6 +1,6 @@
 const usePostUrl = ({ group }) => {
 	const updateUrl = async () => {
-		const backend = process.env.APIURL;
+		const backend = process.env.GATSBY_APIURL;
 		const id = '7YXamvsw6hSppoy-s2cPc';
 		try {
 			await fetch(`${backend}/${id}`, {
