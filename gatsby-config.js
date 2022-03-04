@@ -19,6 +19,7 @@ module.exports = {
 				short_name: `aumentapacientes`,
 				start_url: `/`,
 				icon: `src/images/icon.png`,
+				crossOrigin: `use-credentials`,
 			},
 		},
 		'gatsby-plugin-postcss',
