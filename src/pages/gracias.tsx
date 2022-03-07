@@ -11,7 +11,7 @@ declare const window: Window &
 
 const Gracias = () => {
 	// const urls = useGetUrls();
-	const whatsAppLink = 'https://chat.whatsapp.com/BAkuSDZChaX5btfx5gcoaf';
+	const whatsAppLink = 'https://chat.whatsapp.com/HNfMVKZ0T1RK3WTTLHhg1C';
 
 	if (typeof window !== 'undefined') {
 		if (window.fbq != null) {
