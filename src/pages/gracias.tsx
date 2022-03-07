@@ -10,9 +10,9 @@ declare const window: Window &
 	};
 
 const Gracias = () => {
-	// const urls = useGetUrls();
 	const whatsAppLink = 'https://chat.whatsapp.com/HNfMVKZ0T1RK3WTTLHhg1C';
 
+	// const urls = useGetUrls();
 	if (typeof window !== 'undefined') {
 		if (window.fbq != null) {
 			window.fbq('track', 'CompleteRegistration');
