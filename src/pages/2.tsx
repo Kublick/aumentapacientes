@@ -35,7 +35,7 @@ export const S2 = () => {
 					</div>
 				</div>
 
-				<SocialButtons />
+				<SocialButtons hidden={'hidden'} />
 				<div className="md:grid md:grid-cols-2 md:gap-4">
 					<CommentsFacebook />
 					<Testimonios />

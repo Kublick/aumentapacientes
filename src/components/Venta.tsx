@@ -12,7 +12,7 @@ const Venta = () => {
 
 	const unirme = useRef<null | HTMLDivElement>(null);
 
-	const saleEventDate = '15 March 2022';
+	const saleEventDate = '20 March 2022 01:00';
 
 	return (
 		<div className="max-w-7xl mx-auto">

@@ -1,12 +1,32 @@
-import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Videoplayer from '../components/Videoplayer';
-import { CommentsFacebook } from '../components/CommentsFacebook';
-import { Testimonios } from '../components/Testimonios';
 import { SocialButtons } from '../components/SocialButtons';
+import Venta from '../components/Venta';
+import React, { useRef } from 'react';
+import { SalesPitch } from '../components/SalesPitch';
 
 export const S4 = () => {
 	const videoUrl = 'https://youtu.be/rEB2Stu9cX4';
+	//const salesPitchTime = 'March 25, 2020 17:30';
+	const [show, setShow] = React.useState(false);
+	const [point, setPoint] = React.useState(false);
+	const ventaRef = useRef<null | HTMLDivElement>(null);
+
+	const salesPitchTime = 'March 15, 2022 15:30';
+
+	function timing() {
+		setInterval(() => {
+			if (Date.now() > new Date(salesPitchTime).getTime()) {
+				setShow(true);
+				setPoint(true);
+			}
+		}, 10000);
+	}
+	timing();
+
+	if (point === true) {
+		ventaRef.current.scrollIntoView({ behavior: 'smooth' });
+	}
 
 	return (
 		<div className="max-w-7xl mx-auto">
@@ -32,18 +52,12 @@ export const S4 = () => {
 							No te preocupes! Vuelve a ver el video y revisa tu cuaderno de
 							trabajo. También puedes acceder al grupo de Facebook y Whatsapp.
 						</p>
+						``
 					</div>
 				</div>
-
 				<SocialButtons />
-				<div className="my-20">
-					<p className="text-base font-bold text-primary">
-						Agrega un comentario público…
-					</p>
-				</div>
-				<div className="md:grid md:grid-cols-2 md:gap-4">
-					<CommentsFacebook />
-					<Testimonios />
+				<div className="my-20" ref={ventaRef}>
+					{show ? <SalesPitch /> : null}
 				</div>
 			</div>
 		</div>

@@ -4,7 +4,7 @@ import { Tooltip } from './Tooltip';
 
 export const FAB = () => {
 	const handleRedirect = () => {
-		window.open('https://wa.me/message/LD54V7JCH3TXD16');
+		window.open('https://wa.me/message/LD54V7JCH3TXD1');
 	};
 	return (
 		<>

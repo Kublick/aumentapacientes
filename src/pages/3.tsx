@@ -34,7 +34,7 @@ export const S3 = () => {
 						</p>
 					</div>
 				</div>
-				<SocialButtons />
+				<SocialButtons hidden={'hidden'} />
 				<div className="my-20">
 					<p className="text-base font-bold text-primary">
 						Agrega un comentario público…

@@ -8,20 +8,6 @@ import { SocialButtons } from '../components/SocialButtons';
 export const S1 = () => {
 	const videoUrl = 'https://youtu.be/WDBrfb8tRUI';
 
-	const getWorkBook = () => {
-		window.open(
-			'https://incrementafiles.s3.us-west-1.amazonaws.com/Aumenta+Pacientes.pdf',
-		);
-	};
-
-	const whatsappGroup = () => {
-		window.open('https://chat.whatsapp.com/JQ2qY3qWZ8qLzw1BZHkMZO');
-	};
-
-	const fbGroup = () => {
-		window.open('https://www.facebook.com/groups/561601284963553/');
-	};
-
 	return (
 		<div className="max-w-7xl mx-auto">
 			<div className="pt-10 mx-9 lg:mt-5">
@@ -29,7 +15,6 @@ export const S1 = () => {
 					<StaticImage
 						src="../images/aumenta_pacientes_logo.png"
 						alt="Aumenta Pacientes Logo"
-						className=""
 					/>
 				</div>
 				<h1 className="mt-12 font-light text-primary text-27 md:w-1/2">
@@ -49,7 +34,7 @@ export const S1 = () => {
 					</div>
 				</div>
 
-				<SocialButtons />
+				<SocialButtons hidden={'hidden'} />
 				<div className="my-20">
 					<p className="text-base font-bold text-primary">
 						Agrega un comentario público…

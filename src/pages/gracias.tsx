@@ -10,9 +10,10 @@ declare const window: Window &
 	};
 
 const Gracias = () => {
-	const whatsAppLink = 'https://chat.whatsapp.com/HNfMVKZ0T1RK3WTTLHhg1C';
+	// const whatsAppLink = 'https://chat.whatsapp.com/HNfMVKZ0T1RK3WTTLHhg1C';
+	const urls = useGetUrls();
 
-	// const urls = useGetUrls();
+	console.log(urls);
 	if (typeof window !== 'undefined') {
 		if (window.fbq != null) {
 			window.fbq('track', 'CompleteRegistration');
@@ -20,7 +21,7 @@ const Gracias = () => {
 	}
 
 	const handleAddToWhatsapp = () => {
-		window.open(whatsAppLink);
+		window.open(urls);
 	};
 
 	return (

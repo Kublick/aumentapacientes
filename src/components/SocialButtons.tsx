@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
+import { fbwhite } from './utils/svg';
 
-export const SocialButtons = () => {
+type Props = {
+	hidden?: string;
+};
+
+export const SocialButtons: FC<Props> = ({ hidden }) => {
 	const getWorkBook = () => {
 		window.open(
 			'https://incrementafiles.s3.us-west-1.amazonaws.com/Aumenta+Pacientes.pdf',
@@ -8,7 +13,7 @@ export const SocialButtons = () => {
 	};
 
 	const whatsappGroup = () => {
-		window.open('https://chat.whatsapp.com/JQ2qY3qWZ8qLzw1BZHkMZO');
+		window.open('https://wa.me/message/LD54V7JCH3TXD1');
 	};
 
 	const fbGroup = () => {
@@ -25,7 +30,7 @@ export const SocialButtons = () => {
 					Cuaderno de Trabajo
 				</button>
 				<button
-					className="w-full py-4 text-base font-bold text-white transition-transform transform bg-whatsapp active:scale-75 rounded-lg"
+					className={`w-full py-4 text-base font-bold text-white transition-transform transform bg-whatsapp active:scale-75 rounded-lg ${hidden}`}
 					onClick={() => whatsappGroup()}
 				>
 					Grupo de Whatsapp
@@ -34,13 +39,10 @@ export const SocialButtons = () => {
 					className="w-full py-4 text-base font-bold uppercase transition-transform transform bg-facebook text-white border-primary active:scale-75 hover:bg-blue-600 rounded-lg"
 					onClick={fbGroup}
 				>
-					No te lo pierdas
+					<span className="flex items-center justify-center gap-x-4">
+						{fbwhite} No te lo pierdas
+					</span>
 				</button>
-			</div>
-			<div className="my-20">
-				<p className="text-base font-bold text-primary">
-					Agrega un comentario público…
-				</p>
 			</div>
 		</div>
 	);
