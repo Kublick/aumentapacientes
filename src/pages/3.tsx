@@ -4,9 +4,18 @@ import Videoplayer from '../components/Videoplayer';
 import { CommentsFacebook } from '../components/CommentsFacebook';
 import { Testimonios } from '../components/Testimonios';
 import { SocialButtons } from '../components/SocialButtons';
+import { navigate } from 'gatsby';
 
 export const S3 = () => {
 	const videoUrl = 'https://youtu.be/TaWaSonUb64';
+
+	const nextClass = () => {
+		navigate('/4');
+	};
+
+	const prevClass = () => {
+		navigate('/2');
+	};
 
 	return (
 		<div className="max-w-7xl mx-auto">
@@ -19,8 +28,7 @@ export const S3 = () => {
 					/>
 				</div>
 				<h1 className="mt-12 font-light text-primary text-27 md:w-1/2">
-					Tu oportunidad de tener pacientes{' '}
-					<span className="font-bold">Desde las redes sociales</span>
+					<span className="font-bold">El Mapa</span>
 				</h1>
 				<div className="mt-10 md:grid md:grid-cols-2 md:gap-4">
 					<Videoplayer url={videoUrl} controls={false} />
@@ -35,6 +43,22 @@ export const S3 = () => {
 					</div>
 				</div>
 				<SocialButtons hidden={'hidden'} />
+
+				<div className="mt-16 flex justify-center space-x-6">
+					<button
+						className="px-12 py-4 text-base font-bold transition-transform transform border-2 bg-secondary text-primary border-primary active:scale-75 hover:bg-secondarylight rounded-lg hover:border-transparent"
+						onClick={() => prevClass()}
+					>
+						Clase Previa
+					</button>
+					<button
+						className="px-12 py-4 text-base font-bold transition-transform transform border-2 bg-secondary text-primary border-primary active:scale-75 hover:bg-secondarylight rounded-lg hover:border-transparent"
+						onClick={() => nextClass()}
+					>
+						Proxima Clase
+					</button>
+				</div>
+
 				<div className="my-20">
 					<p className="text-base font-bold text-primary">
 						Agrega un comentario público…

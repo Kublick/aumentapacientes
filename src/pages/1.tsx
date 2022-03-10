@@ -4,9 +4,14 @@ import Videoplayer from '../components/Videoplayer';
 import { CommentsFacebook } from '../components/CommentsFacebook';
 import { Testimonios } from '../components/Testimonios';
 import { SocialButtons } from '../components/SocialButtons';
+import { navigate } from 'gatsby';
 
 export const S1 = () => {
 	const videoUrl = 'https://youtu.be/WDBrfb8tRUI';
+
+	const nextClass = () => {
+		navigate('/2');
+	};
 
 	return (
 		<div className="max-w-7xl mx-auto">
@@ -33,8 +38,15 @@ export const S1 = () => {
 						</p>
 					</div>
 				</div>
-
 				<SocialButtons hidden={'hidden'} />
+				<div className="mt-16 flex justify-center">
+					<button
+						className="px-12 py-4 text-base font-bold transition-transform transform border-2 bg-secondary text-primary border-primary active:scale-75 hover:bg-secondarylight rounded-lg hover:border-transparent"
+						onClick={() => nextClass()}
+					>
+						Proxima Clase
+					</button>
+				</div>
 				<div className="my-20">
 					<p className="text-base font-bold text-primary">
 						Agrega un comentario público…

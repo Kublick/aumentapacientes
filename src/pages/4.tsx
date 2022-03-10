@@ -39,8 +39,7 @@ export const S4 = () => {
 					/>
 				</div>
 				<h1 className="mt-12 font-light text-primary text-27 md:w-1/2">
-					Tu oportunidad de tener pacientes{' '}
-					<span className="font-bold">Desde las redes sociales</span>
+					<span className="font-bold">La Estrategia</span>
 				</h1>
 				<div className="mt-10 md:grid md:grid-cols-2 md:gap-4">
 					<Videoplayer url={videoUrl} controls={false} />
