@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { fbwhite } from './utils/svg';
+import { fbwhite, wswhite } from './utils/svg';
 
 type Props = {
 	hidden?: string;
@@ -30,17 +30,19 @@ export const SocialButtons: FC<Props> = ({ hidden }) => {
 					Cuaderno de Trabajo
 				</button>
 				<button
-					className={`w-full py-4 text-base font-bold text-white transition-transform transform bg-whatsapp active:scale-75 rounded-lg ${hidden}`}
+					className={`w-full py-4 text-base font-bold text-white transition-transform transform bg-whatsapp active:scale-75 rounded-lg ${hidden} hover:opacity-90`}
 					onClick={() => whatsappGroup()}
 				>
-					Grupo de Whatsapp
+					<span className="flex items-center justify-center gap-x-4 font-bold">
+						{wswhite} Quiero Saber más información
+					</span>
 				</button>
 				<button
 					className="w-full py-4 text-base font-bold uppercase transition-transform transform bg-facebook text-white border-primary active:scale-75 hover:bg-blue-600 rounded-lg"
 					onClick={fbGroup}
 				>
 					<span className="flex items-center justify-center gap-x-4">
-						{fbwhite} No te lo pierdas
+						{fbwhite} Ir a la comunidad de Facebook
 					</span>
 				</button>
 			</div>

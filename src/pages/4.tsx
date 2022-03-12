@@ -44,14 +44,17 @@ export const S4 = () => {
 				<div className="mt-10 md:grid md:grid-cols-2 md:gap-4">
 					<Videoplayer url={videoUrl} controls={false} />
 					<div className="place-self-end">
+						<h1 className="text-3xl text-primary">
+							Proximamente: <br />
+							<span className="font-bold">Martes 15 de Marzo</span>
+						</h1>
 						<h2 className="text-base font-bold mt-7 text-primary">
 							¿No pudiste tomar nota o tienes duda?
 						</h2>
 						<p className="mt-10 text-base font-light text-primary">
-							No te preocupes! Vuelve a ver el video y revisa tu cuaderno de
-							trabajo. También puedes acceder al grupo de Facebook y Whatsapp.
+							Puedes acceder al grupo de Facebook, Enviame mensaje por whatsapp
+							si tienes preguntas.
 						</p>
-						``
 					</div>
 				</div>
 				<SocialButtons />
