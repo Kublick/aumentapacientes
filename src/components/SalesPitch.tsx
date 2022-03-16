@@ -8,7 +8,7 @@ import bonos from '../components/utils/bonos.json';
 
 export const SalesPitch = () => {
 	const unirme = useRef<null | HTMLDivElement>(null);
-	const saleEventDate = '15 March 2022';
+	const saleEventDate = '21 March 2022 00:00';
 
 	return (
 		<>

@@ -8,7 +8,7 @@ import { Footer } from './Footer';
 import { FAB } from './FAB';
 
 const Venta = () => {
-	const videoLink = 'https://youtu.be/rEB2Stu9cX4';
+	const videoLink = 'https://youtu.be/rEB2Stu9cX4?t=349';
 
 	const unirme = useRef<null | HTMLDivElement>(null);
 
@@ -35,7 +35,7 @@ const Venta = () => {
 						<div className="player-wrapper">
 							<ReactPlayer
 								url={videoLink}
-								playing={false}
+								playing={true}
 								controls={false}
 								className="react-player"
 								height="100%"
