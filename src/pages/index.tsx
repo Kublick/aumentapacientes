@@ -1,3 +1,4 @@
+import { navigate } from "gatsby";
 import * as React from "react";
 import { useRef } from "react";
 import Counter from "../components/Counter";
@@ -15,6 +16,12 @@ const IndexPage = () => {
     registroRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
+  React.useEffect(() => {
+    navigate("/inscripcion");
+  }, []);
+
+  const view = false;
+
   return (
     <>
       <SEO
@@ -29,17 +36,20 @@ const IndexPage = () => {
           `fisioterapeutas`,
         ]}
       />
-
-      <Hero fechaEvento={"10 al 15 de Marzo"} eventTime={"13 March 2022"} />
-      <div ref={registroRef}>
-        <Formulario />
-      </div>
-      <Oferta handleClick={handleClick} />
-      <Tecnicas />
-      <Formulario />
-      <footer className="mt-24">
-        <Footer />
-      </footer>
+      {view ? (
+        <>
+          <Hero fechaEvento={"10 al 15 de Marzo"} eventTime={"13 March 2022"} />
+          <div ref={registroRef}>
+            <Formulario />
+          </div>
+          <Oferta handleClick={handleClick} />
+          <Tecnicas />
+          <Formulario />
+          <footer className="mt-24">
+            <Footer />
+          </footer>
+        </>
+      ) : null}
     </>
   );
 };
