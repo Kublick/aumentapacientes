@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Videoplayer from "../components/Videoplayer";
 import { CommentsFacebook } from "../components/CommentsFacebook";
@@ -13,7 +13,7 @@ export const S1 = () => {
     navigate("/2");
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     navigate("/inscripcion");
   }, []);
 
