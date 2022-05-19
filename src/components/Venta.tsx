@@ -6,6 +6,7 @@ import bonos from '../components/utils/bonos.json';
 import { Testimonios } from './Testimonios';
 import { Footer } from './Footer';
 import { FAB } from './FAB';
+import { giftIcon } from '../components/utils/svg';
 
 const Venta = () => {
 	const videoLink = 'https://youtu.be/rEB2Stu9cX4?t=349';
@@ -43,42 +44,42 @@ const Venta = () => {
 							/>
 						</div>
 					</div>
-					<div className="grid gap-6 mt-7 text-primary md:grid-cols-2 lg:grid-cols-1">
-						<div>
-							<h2 className="text-xl font-semibold lg:text-2xl">
-								¡Tu ya eres éxito! Solo hagamos que se manifieste
-							</h2>
-						</div>
-						<div>
-							<h3 className="lg:text-2xl">
-								Bonos de acción rápida (Solo disponibles las primeras 24 horas)
-							</h3>
-						</div>
-						<div>
-							<p className="text-lg">
-								{' '}
-								<span className="font-bold">
-									5 SESIONES INDIVIDUALES DE MENTORÍA
-								</span>{' '}
-								uno a uno con la psicóloga Berenice Bastidas durante el
-								entrenamiento, donde podrás recibir de primera mano ayuda
-								enfocada únicamente en tu proyecto profesional.{' '}
-							</p>
-							<p className="font-bold">Valorado en $500 dólares</p>
-						</div>
+					<div className="md:grid gap-6 mt-7 text-primary md:grid-cols-2 lg:grid-cols-1">
+						<h2 className="text-xl font-semibold lg:text-2xl">
+							¡Tu ya eres éxito! Solo hagamos que se manifieste
+						</h2>
+						<h3 className="lg:text-2xl">
+							Bonos de acción rápida (Solo disponibles las primeras 24 horas)
+						</h3>
 
-						<div>
-							<p className="text-lg">
-								{' '}
-								<span className="font-bold">
-									MANUAL HERRAMIENTAS DIGITALES
-								</span>{' '}
-								para que no tengas que pasar horas buscando herramientas buenas,
-								este manual en lista las mejores herramientas digitales y
-								plataformas con las que podrás trabajar y muchas de ellas en su
-								versión gratuita.
-							</p>
-							<p className="font-bold">Valorado en $47 dólares</p>
+						<div className="flex md:gap-x-2 ">
+							<span className="text-lg">{giftIcon} </span>
+							<div>
+								<p className="text-lg ">
+									<span className="font-bold flex gap-x-2">
+										5 SESIONES INDIVIDUALES DE MENTORÍA
+									</span>{' '}
+									uno a uno con la psicóloga Berenice Bastidas durante el
+									entrenamiento, donde podrás recibir de primera mano ayuda
+									enfocada únicamente en tu proyecto profesional.{' '}
+								</p>
+								<p className="font-bold">Valorado en $500 dólares</p>
+							</div>
+						</div>
+						<div className="flex mt-2 md:mt-0 md:gap-x-2 ">
+							<span className="text-lg">{giftIcon} </span>
+							<div>
+								<p className="text-lg ">
+									<span className="font-bold flex gap-x-2">
+										MANUAL HERRAMIENTAS DIGITALES
+									</span>{' '}
+									para que no tengas que pasar horas buscando herramientas
+									buenas, este manual en lista las mejores herramientas
+									digitales y plataformas con las que podrás trabajar y muchas
+									de ellas en su versión gratuita.
+								</p>
+								<p className="font-bold">Valorado en $500 dólares</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -168,9 +169,7 @@ const Venta = () => {
 									empuje de ser parte de una tribu que creme no te va a dejar
 									sola.
 								</p>
-								<p className="font-bold text-primary">
-									Valorado en $497 dólares
-								</p>
+								<p className="font-bold text-primary">Invaluable</p>
 							</div>
 
 							<div className="mt-7 m:mt-0">

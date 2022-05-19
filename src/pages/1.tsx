@@ -7,7 +7,7 @@ import { SocialButtons } from '../components/SocialButtons';
 import { navigate } from 'gatsby';
 
 export const S1 = () => {
-	const videoUrl = 'https://youtu.be/WDBrfb8tRUI';
+	const videoUrl = 'https://youtu.be/hpLuwCYqLZk';
 
 	const nextClass = () => {
 		navigate('/2');

@@ -60,6 +60,8 @@ function SEO({ description, lang, meta, keywords, title }) {
 					name: 'facebook-domain-verification',
 					content: 'kspdfmry486jtdkcj489g8alrwwxkg',
 				},
+
+		
 			]
 				.concat(
 					keywords.length > 0
